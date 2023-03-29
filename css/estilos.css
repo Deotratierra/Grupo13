@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: aqua;
+}
+
+header .cont_logo {
+    background-color: blue;
+}
+
+header .cont_menu nav ul li {
+    background-color: rgb(255, 0, 43);
+    
+}
+
+section {
+    background-color: deeppink;
+}
+
+section .cont_cover {
+    background-color: transparent;
+    background-image: url(../img/cover1.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 100%;
+}

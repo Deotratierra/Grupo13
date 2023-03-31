@@ -55,41 +55,51 @@
 			</nav>
 
 	</header>
-	<div class="modal fade " id="form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-		aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered" role="document">
+
+	<div class="modal fade" id="form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
 			<div class="modal-content">
-				<div class="modal-header text-center border-bottom-0">
-					<h5 class="modal-title" id="exampleModalLabel">Formulario de Consulta</h5>
+				<div class="modal-header text-center">
+					<h4 class="modal-title w-100 font-weight-bold">Write to us</h4>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
 				</div>
-				<form>
-					<div class="modal-body">
-						<div class="form-group">
-							<label for="email1">Email address</label>
-							<input type="email" class="form-control" id="email1" aria-describedby="emailHelp"
-								placeholder="Enter email">
-							<small id="emailHelp" class="form-text text-muted">Your information is safe with
-								us.</small>
-						</div>
-						<div class="form-group">
-							<label for="password1">Password</label>
-							<input type="password" class="form-control" id="password1" placeholder="Password">
-						</div>
-						<div class="form-group">
-							<label for="password1">Confirm Password</label>
-							<input type="password" class="form-control" id="password2" placeholder="Confirm Password">
-						</div>
+				<div class="modal-body mx-3">
+					<div class="md-form mb-5">
+						<i class="fas fa-user prefix grey-text"></i>
+						<input type="text" id="modalContactInput1" class="form-control validate">
+						<label data-error="wrong" data-success="right" for="modalContactInput1">Your
+							name</label>
 					</div>
-					<div class="modal-footer border-top-0 d-flex justify-content-center">
-						<button type="submit" class="btn btn-success">Submit</button>
+
+					<div class="md-form mb-5">
+						<i class="fas fa-envelope prefix grey-text"></i>
+						<input type="email" id="modalContactInput2" class="form-control validate">
+						<label data-error="wrong" data-success="right" for="modalContactInput2">Your
+							email</label>
 					</div>
-				</form>
+
+					<div class="md-form mb-5">
+						<i class="fas fa-tag prefix grey-text"></i>
+						<input type="text" id="modalContactInput3" class="form-control validate">
+						<label data-error="wrong" data-success="right" for="modalContactInput3">Subject</label>
+					</div>
+
+					<div class="md-form">
+						<i class="fas fa-pencil prefix grey-text"></i>
+						<textarea type="text" id="modalContactTextarea" class="md-textarea form-control"
+							rows="4"></textarea>
+						<label data-error="wrong" data-success="right" for="modalContactTextarea">Your
+							message</label>
+					</div>
+
+				</div>
+				<div class="modal-footer d-flex justify-content-center">
+					<button class="btn btn-unique">Send <i class="fas fa-paper-plane-o ml-1"></button>
+				</div>
 			</div>
 		</div>
-	</div>
 	</div>
 	<!-- Sección del carrusel de imágenes -->
 	<section>
@@ -177,7 +187,8 @@
 				<div class="card__info">
 					<span class="card__category">Recipe</span>
 					<h3 class="card__title">Descubrí Bariloche</h3>
-					<span class="card__by">by <a href="#" class="card__author" title="author">Celeste Mills</a></span>
+					<span class="card__by">by <a href="#" class="card__author" title="author">Celeste
+							Mills</a></span>
 				</div>
 			</article>
 
@@ -203,7 +214,8 @@
 				<div class="card__info">
 					<span class="card__category">Travel</span>
 					<h3 class="card__title">Visitá Usuahia</h3>
-					<span class="card__by">by <a href="#" class="card__author" title="author">John Doe</a></span>
+					<span class="card__by">by <a href="#" class="card__author" title="author">John
+							Doe</a></span>
 				</div>
 			</article>
 
@@ -228,7 +240,8 @@
 				<div class="card__info">
 					<span class="card__category">Travel</span>
 					<h3 class="card__title">Viví Mendoza</h3>
-					<span class="card__by">by <a href="#" class="card__author" title="author">John Doe</a></span>
+					<span class="card__by">by <a href="#" class="card__author" title="author">John
+							Doe</a></span>
 				</div>
 			</article>
 
@@ -253,77 +266,106 @@
 				<div class="card__info">
 					<span class="card__category">Travel</span>
 					<h3 class="card__title">Conocé Salta</h3>
-					<span class="card__by">by <a href="#" class="card__author" title="author">John Doe</a></span>
+					<span class="card__by">by <a href="#" class="card__author" title="author">John
+							Doe</a></span>
 				</div>
 			</article>
 		</section>
 	</div>
 
 
-	<div class="cont_cards_2">
+	<div id="nosotros" class="col-md-8 col-sm-6 col-xs-12">
 
+		<section class="nosinfo">
+			<h3 class="nostitulo"> Quienes somos</h3>
 
-		<!-- Site footer -->div
-		<footer class="site-footer">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-12 col-md-6">
-						<h6>About</h6>
-						<p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative to help
-							the upcoming programmers with the code. Scanfcode focuses on providing the most efficient
-							code or snippets as the code wants to be simple. We will help programmers build up concepts
-							in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap,
-							JavaScript, PHP, Android, SQL and Algorithm.</p>
-					</div>
+			<div class="texto">
+				<p> Somos una empresa que cuenta con más de veinte años de experiencia en el mercado de
+					turismo y el turismo
+					low
+					cost.
 
-					<div class="col-xs-6 col-md-3">
-						<h6>Categories</h6>
-						<ul class="footer-links">
-							<li><a href="http://scanfcode.com/category/c-language/">C</a></li>
-							<li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
-							<li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
-							<li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
-							<li><a href="http://scanfcode.com/category/android/">Android</a></li>
-							<li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
-						</ul>
-					</div>
+				<p>Todos nuestros viajes están elaborados con altos estándares de calidad. Contamos con
+					hoteles de primer
+					nivel y
+					transportes de modernísimas unidades.</p>
 
-					<div class="col-xs-6 col-md-3">
-						<h6>Quick Links</h6>
-						<ul class="footer-links">
-							<li><a href="http://scanfcode.com/about/">About Us</a></li>
-							<li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
-							<li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
-							<li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
-							<li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
-						</ul>
-					</div>
-				</div>
-				<hr>
+				<p> Nuestros coordinadores y guías matriculados hacen de cada viaje el mejor logrando el
+					bienestar de los
+					pasajeros.
+
+				<p>La atención personalizada y la calidad en el servicio son nuestros principales
+					valores.</p>
 			</div>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-sm-6 col-xs-12">
-						<p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by
-							<a href="#">Scanfcode</a>.
-						</p>
-					</div>
+		</section>
+	</div>
 
-					<div class="col-md-4 col-sm-6 col-xs-12">
-						<ul class="social-icons">
-							<li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-							<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-							<li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-							<li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-						</ul>
-					</div>
+
+	<!-- Site footer -->
+	<footer class="site-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-6">
+					<h6>About</h6>
+					<p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative
+						to help
+						the upcoming programmers with the code. Scanfcode focuses on providing the most
+						efficient
+						code or snippets as the code wants to be simple. We will help programmers build up
+						concepts
+						in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap,
+						JavaScript, PHP, Android, SQL and Algorithm.</p>
+				</div>
+
+				<div class="col-xs-6 col-md-3">
+					<h6>Categories</h6>
+					<ul class="footer-links">
+						<li><a href="http://scanfcode.com/category/c-language/">C</a></li>
+						<li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a>
+						</li>
+						<li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
+						<li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
+						<li><a href="http://scanfcode.com/category/android/">Android</a></li>
+						<li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
+					</ul>
+				</div>
+
+				<div class="col-xs-6 col-md-3">
+					<h6>Quick Links</h6>
+					<ul class="footer-links">
+						<li><a href="http://scanfcode.com/about/">About Us</a></li>
+						<li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+						<li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
+						<li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
+						<li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+					</ul>
 				</div>
 			</div>
-		</footer>
+			<hr>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-sm-6 col-xs-12">
+					<p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by
+						<a href="#">Scanfcode</a>.
+					</p>
+				</div>
+
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<ul class="social-icons">
+						<li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+						<li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 
 </html>

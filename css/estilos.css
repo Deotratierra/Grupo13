@@ -359,14 +359,14 @@ header.sticky ul a:hover:after {
 
 }
 
-/* seccion acerca de nosotros */
+/* /* seccion acerca de nosotros */
 #nosotros {
 
   margin-top: 0px;
   margin-bottom: 100px;
   width: 100%;
   height: 550px;
-  background-image: url(https://img.freepik.com/foto-gratis/pareja-feliz-turista-mano-apuntando-copiar-espacio-equipaje-que-viajar-vacaciones_74952-2508.jpg?w=900&t=st=1680183636~exp=1680184236~hmac=f221c5c94bd09165ea55e3d01f96fd64d091fc27ea9b30919bcfc502196834b1);
+  /* background-image: url(https://img.freepik.com/foto-gratis/pareja-feliz-turista-mano-apuntando-copiar-espacio-equipaje-que-viajar-vacaciones_74952-2508.jpg?w=900&t=st=1680183636~exp=1680184236~hmac=f221c5c94bd09165ea55e3d01f96fd64d091fc27ea9b30919bcfc502196834b1); */
   background-size: cover;
   background-position: center;
   padding-left: 44px;
@@ -391,7 +391,7 @@ header.sticky ul a:hover:after {
   text-align: justify;
   font-size: large;
 
-}
+} */
 
 /* footer */
 /* 
@@ -520,9 +520,8 @@ header.sticky ul a:hover:after {
   margin-top: 0px; margin-bottom: 100px;
   width: 100%;
   height: 550px;
-background-image: url(https://img.freepik.com/foto-gratis/pareja-feliz-turista-mano-apuntando-copiar-espacio-equipaje-que-viajar-vacaciones_74952-2508.jpg?w=900&t=st=1680183636~exp=1680184236~hmac=f221c5c94bd09165ea55e3d01f96fd64d091fc27ea9b30919bcfc502196834b1) ;
-background-size: cover;
-background-position: center;
+  background-color: rgb(246, 243, 248);
+
 }
 
 
@@ -531,12 +530,13 @@ background-position: center;
   top: 15%;
   margin-right: 50%;
   margin-left: 10%;
-  color: white;
-  bottom: 5%
+  color: rgb(29, 22, 22);
+ /*  bottom: 0% */
 }
 
 .nostitulo{
-  margin-bottom: 15px;
+ margin-bottom: 15px; 
+ 
 }
 
 .texto{
@@ -565,6 +565,7 @@ font-size: large;
 
 .contacto i{
   margin: 10px 0px;
+  
  
 }
 .redes{

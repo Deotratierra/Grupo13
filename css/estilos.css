@@ -359,39 +359,6 @@ header.sticky ul a:hover:after {
 
 }
 
-/* /* seccion acerca de nosotros */
-#nosotros {
-
-  margin-top: 0px;
-  margin-bottom: 100px;
-  width: 100%;
-  height: 550px;
-  /* background-image: url(https://img.freepik.com/foto-gratis/pareja-feliz-turista-mano-apuntando-copiar-espacio-equipaje-que-viajar-vacaciones_74952-2508.jpg?w=900&t=st=1680183636~exp=1680184236~hmac=f221c5c94bd09165ea55e3d01f96fd64d091fc27ea9b30919bcfc502196834b1); */
-  background-size: cover;
-  background-position: center;
-  padding-left: 44px;
-}
-
-
-.nosinfo {
-  position: absolute;
-  top: 15%;
-  margin-right: 50%;
-  margin-left: 10%;
-  color: white;
-  bottom: 5%
-}
-
-.nostitulo {
-  margin-bottom: 15px;
-}
-
-.texto {
-
-  text-align: justify;
-  font-size: large;
-
-} */
 
 @media screen and (min-width: 24.375em) {
   .legal .legal__links {
@@ -417,24 +384,17 @@ header.sticky ul a:hover:after {
   }
 }
 
-/* seccion acerca de nosotros */
+
+/* /* seccion acerca de nosotros */
 #nosotros{
-  position: relative;
+ 
   margin-top: 0px; margin-bottom: 100px;
   width: 100%;
   height: 550px;
-  background-color: rgb(246, 243, 248);
-
-}
-
-
-.nosinfo{
-  position: absolute;
-  top: 15%;
-  margin-right: 50%;
-  margin-left: 10%;
-  color: rgb(29, 22, 22);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif,sans-serif;
+  background-color: rgb(148, 91, 185);
+  display: flex;
+  justify-content: space-around;
+  
 }
 
 .nostitulo{
@@ -443,13 +403,22 @@ header.sticky ul a:hover:after {
 }
 
 .texto{
-
+height: 70%;
+width: 35%;
+background-color: #ff0059;
 text-align: justify;
 font-size: large;    
   
 }
 
+.imagen-nosotros{
+  height: 50px;
+  width: 60px;
+  background-size: cover;
+  background-position: center;
+  background-color: #0019a7;
 
+}
 
 
 
@@ -514,3 +483,4 @@ font-size: small;
   height: 150px;
   margin-top: 20px;
 }
+

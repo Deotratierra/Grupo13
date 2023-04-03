@@ -8,10 +8,12 @@
 	<meta http-equiv='X-UA-Compatible' content="IE=edge">
 	<!-- Escala de la página según el tamaño del dispositivo del usuario -->
 	<meta name='viewport' content="width=device-width, initial-scale=1.0">
-	
-	
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	
+
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 	<!-- Enlace al archivo de hoja de estilos personalizadas -->
 	<link rel='stylesheet' href='css/estilos.css'>
 	<!-- Título de la página -->
@@ -22,104 +24,69 @@
 
 <body>
 	<header>
-        <a href="#" class="brand">Travel</a>
-        <div class="menu-btn"></div>
-        <div class="navigation">
-            <div class="navigation-items">
-                <a href="#">Inicio</a>
-                <a href="#">Paquetes</a>
-                <a href="#">Nosotros</a>
-                <a href="#">Desarrollo</a>
-                <a href="#">Contacto</a>
-            </div>
-        </div>
+		<a href="#" class="brand">Travel</a>
+		<div class="menu-btn"></div>
+		<div class="navigation">
+			<div class="navigation-items">
+				<a href="#">Inicio</a>
+				<a href="#">Paquetes</a>
+				<a href="#">Nosotros</a>
+				<a href="#">Desarrollo</a>
+				<a href="#">Contacto</a>
+			</div>
+		</div>
 	</header>
 
 
-<!-- Video carrousell (By POL - NO BOOTSTRAP) -->
-<main>
-<section class="home">
-    <video class="video-slide active" src="vids/1.mp4" autoplay muted loop></video>
-    <video class="video-slide" src="vids/2.mp4" autoplay muted loop></video>
-    <video class="video-slide" src="vids/3.mp4" autoplay muted loop></video>
-    <div class="content active">
-        <h1>Disfrutá de <br><span>lugares increíbles</span></h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, aut?</p>
-        <a href="#">Buscá tu destino</a>
-    </div>
-    <div class="content">
-        <h1>Viví experiencias <br><span>únicas</span></h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, aut?</p>
-        <a href="#">Buscá tu destino</a>
-    </div>
-    <div class="content">
-        <h1>Descubrí <br><span>Argentina</span></h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, aut?</p>
-        <a href="#">Buscá tu destino</a>
-    </div>
+	<!-- Video carrousell (By POL - NO BOOTSTRAP) -->
+	<main>
+		<section class="home">
+			<video class="video-slide active" src="vids/1.mp4" autoplay muted loop></video>
+			<video class="video-slide" src="vids/2.mp4" autoplay muted loop></video>
+			<video class="video-slide" src="vids/3.mp4" autoplay muted loop></video>
+			<div class="content active">
+				<h1>Disfrutá de <br><span>lugares increíbles</span></h1>
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, aut?</p>
+				<a href="#">Buscá tu destino</a>
+			</div>
+			<div class="content">
+				<h1>Viví experiencias <br><span>únicas</span></h1>
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, aut?</p>
+				<a href="#">Buscá tu destino</a>
+			</div>
+			<div class="content">
+				<h1>Descubrí <br><span>Argentina</span></h1>
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, aut?</p>
+				<a href="#">Buscá tu destino</a>
+			</div>
 
-    <div class="media-icons">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-    </div>
-    <div class="slider-navigation">
-        <div class="nav-btn active"></div>
-        <div class="nav-btn"></div>
-        <div class="nav-btn"></div>
-    </div>
-</section>
-    
+			<div class="media-icons">
+				<a href="#"><i class="fab fa-facebook-f"></i></a>
+				<a href="#"><i class="fab fa-instagram"></i></a>
+				<a href="#"><i class="fab fa-twitter"></i></a>
+			</div>
+			<div class="slider-navigation">
+				<div class="nav-btn active"></div>
+				<div class="nav-btn"></div>
+				<div class="nav-btn"></div>
+			</div>
+		</section>
 
-    <script type="text/javascript">
-        // JavaScript del menú responsive
-        const menuBtn = document.querySelector(".menu-btn");
-        const navigation = document.querySelector(".navigation");
 
-        menuBtn.addEventListener("click", () => {
-            menuBtn.classList.toggle("active");
-            navigation.classList.toggle("active");
-        })
-
-        // Javascript del slider navegador de los videos
-        const btns = document.querySelectorAll(".nav-btn");
-        const slides = document.querySelectorAll(".video-slide");
-        const contents = document.querySelectorAll(".content");
-
-        var sliderNav = function(manual) {
-            btns.forEach((btn) => {
-                btn.classList.remove("active");
-            })
-
-            slides.forEach((slide) => {
-                slide.classList.remove("active");
-            })
-
-            contents.forEach((content) => {
-                content.classList.remove("active");
-            })
-
-            btns[manual].classList.add("active");
-            slides[manual].classList.add("active");
-            contents[manual].classList.add("active");
-        }
-
-        btns.forEach((btn, i) => {
-            btn.addEventListener("click", () => {
-                sliderNav(i);
-            })
-        })
-    </script>
-
-    <section class="tarjetas">
-    	<div class="card">
+		<script type="text/javascript" src="/script/slider.js">
+		</script>
+		<!-- info cards cambio imagenes -->
+		<section class="tarjetas">
+			<div class="card">
 				<div class="face front">
-					<img src="https://images.pexels.com/photos/3889742/pexels-photo-3889742.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+					<img src="https://i.ibb.co/hDr32x6/Bariloche.jpg" alt="">
 					<h3>Bariloche</h3>
 				</div>
 				<div class="face back">
 					<h3>Bariloche</h3>
-					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae corrupti optio neque consequatur alias aut autem labore minus quod harum, incidunt error in. Tempore, officiis!</p>
+					<p>Bariloche es un paraíso de la naturaleza en la patagonia Argentina. Disfruta de sus vistas
+						espectaculares, montañas, lagos y bosques. Explora sus parques nacionales, actividades al aire
+						libre y deliciosa gastronomía. ¡No te pierdas esta experiencia única!</p>
 					<div class="link">
 						<a href="#">Detalles</a>
 					</div>
@@ -128,12 +95,15 @@
 
 			<div class="card">
 				<div class="face front">
-					<img src="https://images.pexels.com/photos/3428290/pexels-photo-3428290.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+					<img src="https://i.ibb.co/4tKQP4G/salta.jpg" alt="">
 					<h3>Salta</h3>
 				</div>
 				<div class="face back">
 					<h3>Salta</h3>
-					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae corrupti optio neque consequatur alias aut autem labore minus quod harum, incidunt error in. Tempore, officiis!</p>
+					<p>Salta es un destino de ensueño para los turistas. Esta provincia Argentina ofrece una amplia
+						variedad de paisajes, desde el desierto a los afamados valles calchaquíes, pasando por los
+						impresionantes cerros de los Andes. La cultura local, el arte, la gastronomía y la fiesta son
+						otras de las principales atracciones.</p>
 					<div class="link">
 						<a href="#">Detalles</a>
 					</div>
@@ -142,12 +112,16 @@
 
 			<div class="card">
 				<div class="face front">
-					<img src="https://images.pexels.com/photos/13558679/pexels-photo-13558679.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+					<img src="https://images.pexels.com/photos/13558679/pexels-photo-13558679.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+						alt="">
 					<h3>Mendoza</h3>
 				</div>
 				<div class="face back">
 					<h3>Mendoza</h3>
-					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae corrupti optio neque consequatur alias aut autem labore minus quod harum, incidunt error in. Tempore, officiis!</p>
+					<p>Mendoza es una provincia Argentina con una amplia oferta turística. Sus paisajes únicos, sus
+						vinos de calidad y sus espacios para la aventura son algunas de sus principales atracciones.
+						Disfruta de sus montañas, lagos, viñedos y campos de montaña. Explora sus majestuosas cuevas y
+						cascadas. ¡Te encantará!</p>
 					<div class="link">
 						<a href="#">Detalles</a>
 					</div>
@@ -155,47 +129,57 @@
 			</div>
 
 			<section class="tarjetas">
-			<div class="card">
-				<div class="face front">
-					<img src="https://images.pexels.com/photos/3889742/pexels-photo-3889742.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-					<h3>Bariloche</h3>
-				</div>
-				<div class="face back">
-					<h3>Bariloche</h3>
-					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae corrupti optio neque consequatur alias aut autem labore minus quod harum, incidunt error in. Tempore, officiis!</p>
-					<div class="link">
-						<a href="#">Detalles</a>
+				<div class="card">
+					<div class="face front">
+						<img src="https://i.ibb.co/8MsqnnG/misiones.jpg" alt="">
+						<h3>Misiones</h3>
+					</div>
+					<div class="face back">
+						<h3>Misiones</h3>
+						<p>Misiones es una provincia Argentina con una rica cultura y belleza natural. Ofrece hermosos
+							paisajes de montaña, cascadas, lagos, selvas subtropicales y ruinas Jesuiticas. Para los
+							amantes de la naturaleza hay muchas actividades al aire libre como senderismo, rafting,
+							cabalgatas y pesca. Venga y disfrute de sus encantos.</p>
+						<div class="link">
+							<a href="#">Detalles</a>
+						</div>
 					</div>
 				</div>
-			</div>
 
-			<div class="card">
-				<div class="face front">
-					<img src="https://images.pexels.com/photos/3889742/pexels-photo-3889742.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-					<h3>Bariloche</h3>
-				</div>
-				<div class="face back">
-					<h3>Bariloche</h3>
-					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae corrupti optio neque consequatur alias aut autem labore minus quod harum, incidunt error in. Tempore, officiis!</p>
-					<div class="link">
-						<a href="#">Detalles</a>
+				<div class="card">
+					<div class="face front">
+						<img src="https://i.ibb.co/CJJC0W9/santacruz.jpg" alt="">
+						<h3>Santa Cruz</h3>
+					</div>
+					<div class="face back">
+						<h3>Santa Cruz</h3>
+						<p>Santa Cruz osfrece una variedad de paisajes y actividades turísticas para disfrutar. Desde
+							turismo aventura hasta cultura, hay algo para todos. Visita la impresionante Cordillera de
+							los Andes, los lagos y glaciares de la Patagonia, los valles y bosques húmedos del norte, y
+							los bosques secos del sur. </p>
+						<div class="link">
+							<a href="#">Detalles</a>
+						</div>
 					</div>
 				</div>
-			</div>
 
-			<div class="card">
-				<div class="face front">
-					<img src="https://images.pexels.com/photos/3889742/pexels-photo-3889742.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-					<h3>Bariloche</h3>
-				</div>
-				<div class="face back">
-					<h3>Bariloche</h3>
-					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae corrupti optio neque consequatur alias aut autem labore minus quod harum, incidunt error in. Tempore, officiis!</p>
-					<div class="link">
-						<a href="#">Detalles</a>
+				<div class="card">
+					<div class="face front">
+						<img src="https://images.pexels.com/photos/3428290/pexels-photo-3428290.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+							alt="">
+						<h3>Jujuy</h3>
+					</div>
+					<div class="face back">
+						<h3>Jujuy</h3>
+						<p>Jujuy ofrece una experiencia única en la provincia Argentina. Esta región de los Andes cuenta
+							con una impresionante arquitectura colonial, paisajes increíbles, culturas fascinantes y una
+							gastronomía variada. Visite la Quebrada de Humahuaca, disfrute de la música folklórica local
+							y pruebe la comida típica de la región.</p>
+						<div class="link">
+							<a href="#">Detalles</a>
+						</div>
 					</div>
 				</div>
-			</div>
 			</section>
 		</section>
 	</main>

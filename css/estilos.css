@@ -6,10 +6,6 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 /* Video carrousell */
 
 * {
@@ -141,7 +137,7 @@ header .navigation .navigation-items a:hover:before {
   
 .home .media-icons {
   z-index: 888;
-  position: fixed;
+  position: absolute;
   right: 30px;
   display: flex;
   flex-direction: column;

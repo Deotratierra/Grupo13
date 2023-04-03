@@ -2,418 +2,201 @@
 <html lang='es'>
 
 <head>
-
-	<!--Chicos les agrego los comentarios  para que no se olviden para que es cada cosa =D-->
 	<!-- Definición de la codificación de caracteres -->
 	<meta charset="UTF-8">
 	<!-- Indicación al navegador de utilizar la última versión de Internet Explorer disponible -->
 	<meta http-equiv='X-UA-Compatible' content="IE=edge">
 	<!-- Escala de la página según el tamaño del dispositivo del usuario -->
 	<meta name='viewport' content="width=device-width, initial-scale=1.0">
-	<!-- Enlace a la fuente de Google Fonts y precarga -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&family=Ubuntu:wght@300;400&display=swap"
-		rel="stylesheet">
-	<!-- Enlace al archivo de hoja de estilos de Bootstrap -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	
 	
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	
 	<!-- Enlace al archivo de hoja de estilos personalizadas -->
 	<link rel='stylesheet' href='css/estilos.css'>
-	<!-- Enlace al archivo de hoja de estilos de las tarjetas de presentación -->
-	<link rel="stylesheet" href="css/cards.css">
-	<!-- Enlace al archivo de hoja de estilos de las tarjetas de presentación alternativas -->
-	<link rel="stylesheet" href="css/cards_2.css">
 	<!-- Título de la página -->
 	<title>Proyecto Final</title>
 	<!-- Enlace al icono de la página -->
-	<link rel='icon' href="">
+	<link rel='icon' href="#">
 </head>
 
 <body>
 	<header>
-		<!-- Contenedor principal del encabezado. -->
-		<div class="cont_header">
-			<!-- Barra de navegación con el logo y los enlaces. -->
-			<nav>
-				<!-- Logo -->
-					<a href="#">
-						<!-- Imagen del logo. -->
-						<img src="imgs/prov_logo.png" alt="Logo" class="logo">
-					</a>
-
-				<!-- Check de activación/desactivación del menú responsive -->
-					<input type="checkbox" id="check">
-					<label for="check" class="checkbtn">
-						<i class="fa-solid fa-bars fa-2xl" style="color: #ff0059;"></i>
-					</label>
-					<label for="check" class="closebtn">
-						<i class="fa-regular fa-circle-xmark fa-2xl" style="color: #ff0059;"></i>
-					</label>
-				<!-- Lista de enlaces de la barra de navegación. -->
-				<ul class="menu">
-					<li><a href="#">INICIO</a></li>
-					<li><a href="#">PAQUETES</a></li>
-					<li><a href="#">NOSOTROS</a></li>
-					<li><a href="#">DESARROLLO</a></li>
-					<li><a href="#" data-toggle="modal" data-target="#form">CONTACTO</a></li>
-				</ul>
-			</nav>
-
+        <a href="#" class="brand">Travel</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="#">Inicio</a>
+                <a href="#">Paquetes</a>
+                <a href="#">Nosotros</a>
+                <a href="#">Desarrollo</a>
+                <a href="#">Contacto</a>
+            </div>
+        </div>
 	</header>
 
-	<!-- Data del modal -->
-	<div class="modal fade" id="form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header text-center">
-					<h4 class="modal-title w-100 font-weight-bold">Write to us</h4>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
+
+<!-- Video carrousell (By POL - NO BOOTSTRAP) -->
+<main>
+<section class="home">
+    <video class="video-slide active" src="vids/1.mp4" autoplay muted loop></video>
+    <video class="video-slide" src="vids/2.mp4" autoplay muted loop></video>
+    <video class="video-slide" src="vids/3.mp4" autoplay muted loop></video>
+    <div class="content active">
+        <h1>Disfrutá de <br><span>lugares increíbles</span></h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, aut?</p>
+        <a href="#">Buscá tu destino</a>
+    </div>
+    <div class="content">
+        <h1>Viví experiencias <br><span>únicas</span></h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, aut?</p>
+        <a href="#">Buscá tu destino</a>
+    </div>
+    <div class="content">
+        <h1>Descubrí <br><span>Argentina</span></h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, aut?</p>
+        <a href="#">Buscá tu destino</a>
+    </div>
+
+    <div class="media-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+    <div class="slider-navigation">
+        <div class="nav-btn active"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+    </div>
+</section>
+    
+
+    <script type="text/javascript">
+        // JavaScript del menú responsive
+        const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("active");
+            navigation.classList.toggle("active");
+        })
+
+        // Javascript del slider navegador de los videos
+        const btns = document.querySelectorAll(".nav-btn");
+        const slides = document.querySelectorAll(".video-slide");
+        const contents = document.querySelectorAll(".content");
+
+        var sliderNav = function(manual) {
+            btns.forEach((btn) => {
+                btn.classList.remove("active");
+            })
+
+            slides.forEach((slide) => {
+                slide.classList.remove("active");
+            })
+
+            contents.forEach((content) => {
+                content.classList.remove("active");
+            })
+
+            btns[manual].classList.add("active");
+            slides[manual].classList.add("active");
+            contents[manual].classList.add("active");
+        }
+
+        btns.forEach((btn, i) => {
+            btn.addEventListener("click", () => {
+                sliderNav(i);
+            })
+        })
+    </script>
+
+    <section class="tarjetas">
+    	<div class="card">
+				<div class="face front">
+					<img src="https://images.pexels.com/photos/3889742/pexels-photo-3889742.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+					<h3>Bariloche</h3>
 				</div>
-				<div class="modal-body mx-3">
-					<div class="md-form mb-5">
-						<i class="fas fa-user prefix grey-text"></i>
-						<input type="text" id="modalContactInput1" class="form-control validate">
-						<label data-error="wrong" data-success="right" for="modalContactInput1">Your
-							name</label>
+				<div class="face back">
+					<h3>Bariloche</h3>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae corrupti optio neque consequatur alias aut autem labore minus quod harum, incidunt error in. Tempore, officiis!</p>
+					<div class="link">
+						<a href="#">Detalles</a>
 					</div>
-
-					<div class="md-form mb-5">
-						<i class="fas fa-envelope prefix grey-text"></i>
-						<input type="email" id="modalContactInput2" class="form-control validate">
-						<label data-error="wrong" data-success="right" for="modalContactInput2">Your
-							email</label>
-					</div>
-
-					<div class="md-form mb-5">
-						<i class="fas fa-tag prefix grey-text"></i>
-						<input type="text" id="modalContactInput3" class="form-control validate">
-						<label data-error="wrong" data-success="right" for="modalContactInput3">Subject</label>
-					</div>
-
-					<div class="md-form">
-						<i class="fas fa-pencil prefix grey-text"></i>
-						<textarea type="text" id="modalContactTextarea" class="md-textarea form-control"
-							rows="4"></textarea>
-						<label data-error="wrong" data-success="right" for="modalContactTextarea">Your
-							message</label>
-					</div>
-
-				</div>
-				<div class="modal-footer d-flex justify-content-center">
-					<button class="btn btn-unique">Send <i class="fas fa-paper-plane-o ml-1"></i></button>
 				</div>
 			</div>
-		</div>
-	</div>
 
-	<div id="cont_resp_menu" class="cont_resp_menu">
-		<ul class="resp_menu">
-			<li><a href="#">INICIO</a></li>
-			<li><a href="#">PAQUETES</a></li>
-			<li><a href="#">NOSOTROS</a></li>
-			<li><a href="#">DESARROLLO</a></li>
-			<li><a href="#" data-toggle="modal" data-target="#form">CONTACTO</a></li>
-		</ul>
-	</div>
-
-	<!-- Sección del carrusel de imágenes -->
-	<section>
-		<div id="myCarousel" class="carousel slide" data-ride="carousel">
-			<!-- Indicadores -->
-			<ol class="carousel-indicators">
-				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-				<li data-target="#myCarousel" data-slide-to="1"></li>
-				<li data-target="#myCarousel" data-slide-to="2"></li>
-				<li data-target="#myCarousel" data-slide-to="3"></li>
-			</ol>
-
-			<!-- Wrapper for slides -->
-			<div class="carousel-inner" role="listbox">
-				<div class="item active">
-					<img src="https://images.unsplash.com/photo-1488085061387-422e29b40080?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1400"
-						alt="Chania">
-					<div class="carousel-caption d-none d-md-block">
-						<h5>Hacemos posible tu viaje</h5>
+			<div class="card">
+				<div class="face front">
+					<img src="https://images.pexels.com/photos/3428290/pexels-photo-3428290.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+					<h3>Salta</h3>
+				</div>
+				<div class="face back">
+					<h3>Salta</h3>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae corrupti optio neque consequatur alias aut autem labore minus quod harum, incidunt error in. Tempore, officiis!</p>
+					<div class="link">
+						<a href="#">Detalles</a>
 					</div>
 				</div>
-
-				<div class="item">
-					<img src="https://images.unsplash.com/photo-1419064642531-e575728395f2?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1400"
-						alt="Chania">
-					<div class="carousel-caption d-none d-md-block">
-						<h5>Enamorate de la patagonia</h5>
-					</div>
-				</div>
-
-				<div class="item">
-					<img src="https://images.unsplash.com/photo-1585831939167-b06722f323c1?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1400"
-						alt="Flower">
-					<div class="carousel-caption d-none d-md-block">
-						<h5>Viví experiencias únicas</h5>
-					</div>
-				</div>
-
-				<div class="item">
-					<img src="https://images.unsplash.com/photo-1545889238-7db7056fb932?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1400"
-						alt="Flower">
-					<div class="carousel-caption d-none d-md-block">
-						<h5>Descubrí el norte del país</h5>
-					</div>
-				</div>
-
 			</div>
 
-			<!-- Left and right controls -->
-			<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-				<span class="sr-only">Previous</span>
-			</a>
-			<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-				<span class="sr-only">Next</span>
-			</a>
-		</div>
-	</section>
-
-	<!-- Tarjetas -->
-	<div class="cont_cards col-md-8 col-sm-6 col-xs-12">
-		<section class="cards">
-			<article class="card card--1">
-				<div class="card__info-hover">
-					<svg class="card__like" viewBox="0 0 24 24">
-						<path fill="#000000"
-							d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
-					</svg>
-					<div class="card__clock-info">
-						<svg class="card__clock" viewBox="0 0 24 24">
-							<path
-								d="M12,20A7,7 0 0,1 5,13A7,7 0 0,1 12,6A7,7 0 0,1 19,13A7,7 0 0,1 12,20M19.03,7.39L20.45,5.97C20,5.46 19.55,5 19.04,4.56L17.62,6C16.07,4.74 14.12,4 12,4A9,9 0 0,0 3,13A9,9 0 0,0 12,22C17,22 21,17.97 21,13C21,10.88 20.26,8.93 19.03,7.39M11,14H13V8H11M15,1H9V3H15V1Z" />
-						</svg><span class="card__time">15 min</span>
+			<div class="card">
+				<div class="face front">
+					<img src="https://images.pexels.com/photos/13558679/pexels-photo-13558679.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+					<h3>Mendoza</h3>
+				</div>
+				<div class="face back">
+					<h3>Mendoza</h3>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae corrupti optio neque consequatur alias aut autem labore minus quod harum, incidunt error in. Tempore, officiis!</p>
+					<div class="link">
+						<a href="#">Detalles</a>
 					</div>
-
 				</div>
-				<div class="card__img"></div>
-				<a href="#" class="card_link">
-					<div class="card__img--hover"></div>
-				</a>
-				<div class="card__info">
-					<span class="card__category">Recipe</span>
-					<h3 class="card__title">Descubrí Bariloche</h3>
-					<span class="card__by">by <a href="#" class="card__author" title="author">Celeste
-							Mills</a></span>
+			</div>
+
+			<section class="tarjetas">
+			<div class="card">
+				<div class="face front">
+					<img src="https://images.pexels.com/photos/3889742/pexels-photo-3889742.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+					<h3>Bariloche</h3>
 				</div>
-			</article>
-
-
-			<article class="card card--2">
-				<div class="card__info-hover">
-					<svg class="card__like" viewBox="0 0 24 24">
-						<path fill="#000000"
-							d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
-					</svg>
-					<div class="card__clock-info">
-						<svg class="card__clock" viewBox="0 0 24 24">
-							<path
-								d="M12,20A7,7 0 0,1 5,13A7,7 0 0,1 12,6A7,7 0 0,1 19,13A7,7 0 0,1 12,20M19.03,7.39L20.45,5.97C20,5.46 19.55,5 19.04,4.56L17.62,6C16.07,4.74 14.12,4 12,4A9,9 0 0,0 3,13A9,9 0 0,0 12,22C17,22 21,17.97 21,13C21,10.88 20.26,8.93 19.03,7.39M11,14H13V8H11M15,1H9V3H15V1Z" />
-						</svg><span class="card__time">5 min</span>
+				<div class="face back">
+					<h3>Bariloche</h3>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae corrupti optio neque consequatur alias aut autem labore minus quod harum, incidunt error in. Tempore, officiis!</p>
+					<div class="link">
+						<a href="#">Detalles</a>
 					</div>
-
 				</div>
-				<div class="card__img"></div>
-				<a href="#" class="card_link">
-					<div class="card__img--hover"></div>
-				</a>
-				<div class="card__info">
-					<span class="card__category">Travel</span>
-					<h3 class="card__title">Visitá Usuahia</h3>
-					<span class="card__by">by <a href="#" class="card__author" title="author">John
-							Doe</a></span>
-				</div>
-			</article>
+			</div>
 
-			<article class="card card--3">
-				<div class="card__info-hover">
-					<svg class="card__like" viewBox="0 0 24 24">
-						<path fill="#000000"
-							d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
-					</svg>
-					<div class="card__clock-info">
-						<svg class="card__clock" viewBox="0 0 24 24">
-							<path
-								d="M12,20A7,7 0 0,1 5,13A7,7 0 0,1 12,6A7,7 0 0,1 19,13A7,7 0 0,1 12,20M19.03,7.39L20.45,5.97C20,5.46 19.55,5 19.04,4.56L17.62,6C16.07,4.74 14.12,4 12,4A9,9 0 0,0 3,13A9,9 0 0,0 12,22C17,22 21,17.97 21,13C21,10.88 20.26,8.93 19.03,7.39M11,14H13V8H11M15,1H9V3H15V1Z" />
-						</svg><span class="card__time">5 min</span>
+			<div class="card">
+				<div class="face front">
+					<img src="https://images.pexels.com/photos/3889742/pexels-photo-3889742.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+					<h3>Bariloche</h3>
+				</div>
+				<div class="face back">
+					<h3>Bariloche</h3>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae corrupti optio neque consequatur alias aut autem labore minus quod harum, incidunt error in. Tempore, officiis!</p>
+					<div class="link">
+						<a href="#">Detalles</a>
 					</div>
-
 				</div>
-				<div class="card__img"></div>
-				<a href="#" class="card_link">
-					<div class="card__img--hover"></div>
-				</a>
-				<div class="card__info">
-					<span class="card__category">Travel</span>
-					<h3 class="card__title">Viví Mendoza</h3>
-					<span class="card__by">by <a href="#" class="card__author" title="author">John
-							Doe</a></span>
-				</div>
-			</article>
+			</div>
 
-			<article class="card card--4">
-				<div class="card__info-hover">
-					<svg class="card__like" viewBox="0 0 24 24">
-						<path fill="#000000"
-							d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
-					</svg>
-					<div class="card__clock-info">
-						<svg class="card__clock" viewBox="0 0 24 24">
-							<path
-								d="M12,20A7,7 0 0,1 5,13A7,7 0 0,1 12,6A7,7 0 0,1 19,13A7,7 0 0,1 12,20M19.03,7.39L20.45,5.97C20,5.46 19.55,5 19.04,4.56L17.62,6C16.07,4.74 14.12,4 12,4A9,9 0 0,0 3,13A9,9 0 0,0 12,22C17,22 21,17.97 21,13C21,10.88 20.26,8.93 19.03,7.39M11,14H13V8H11M15,1H9V3H15V1Z" />
-						</svg><span class="card__time">5 min</span>
+			<div class="card">
+				<div class="face front">
+					<img src="https://images.pexels.com/photos/3889742/pexels-photo-3889742.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+					<h3>Bariloche</h3>
+				</div>
+				<div class="face back">
+					<h3>Bariloche</h3>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae corrupti optio neque consequatur alias aut autem labore minus quod harum, incidunt error in. Tempore, officiis!</p>
+					<div class="link">
+						<a href="#">Detalles</a>
 					</div>
-
 				</div>
-				<div class="card__img"></div>
-				<a href="#" class="card_link">
-					<div class="card__img--hover"></div>
-				</a>
-				<div class="card__info">
-					<span class="card__category">Travel</span>
-					<h3 class="card__title">Conocé Salta</h3>
-					<span class="card__by">by <a href="#" class="card__author" title="author">John
-							Doe</a></span>
-				</div>
-			</article>
+			</div>
+			</section>
 		</section>
-	</div>
-
-	<!-- Nosotros -->
-	<div id="nosotros" class="col-md-8 col-sm-6 col-xs-12">
-
-		<section class="nosinfo">
-			<h3 class="nostitulo"> Quienes somos</h3>
-
-			<div class="texto">
-				<p> Somos una empresa que cuenta con más de veinte años de experiencia en el mercado de
-					turismo y el turismo
-					low
-					cost.
-
-				<p>Todos nuestros viajes están elaborados con altos estándares de calidad. Contamos con
-					hoteles de primer
-					nivel y
-					transportes de modernísimas unidades.</p>
-
-				<p> Nuestros coordinadores y guías matriculados hacen de cada viaje el mejor logrando el
-					bienestar de los
-					pasajeros.
-
-				<p>La atención personalizada y la calidad en el servicio son nuestros principales
-					valores.</p>
-			</div>
-		</section>
-	</div>
-
-
-	<!-- Footer -->
-
-	<footer class="footer">
-		<div class="footer__addr">
-		  <h1 class="footer__logo">Something</h1>
-			  
-		  <h2>Contact</h2>
-		  
-		  <address>
-			5534 Somewhere In. The World 22193-10212<br>
-				
-			<a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
-		  </address>
-		</div>
-		
-		<ul class="footer__nav">
-		  <li class="nav__item">
-			<h2 class="nav__title">Media</h2>
-	  
-			<ul class="nav__ul">
-			  <li>
-				<a href="#">Online</a>
-			  </li>
-	  
-			  <li>
-				<a href="#">Print</a>
-			  </li>
-				  
-			  <li>
-				<a href="#">Alternative Ads</a>
-			  </li>
-			</ul>
-		  </li>
-		  
-		  <li class="nav__item nav__item--extra">
-			<h2 class="nav__title">Technology</h2>
-			
-			<ul class="nav__ul nav__ul--extra">
-			  <li>
-				<a href="#">Hardware Design</a>
-			  </li>
-			  
-			  <li>
-				<a href="#">Software Design</a>
-			  </li>
-			  
-			  <li>
-				<a href="#">Digital Signage</a>
-			  </li>
-			  
-			  <li>
-				<a href="#">Automation</a>
-			  </li>
-			  
-			  <li>
-				<a href="#">Artificial Intelligence</a>
-			  </li>
-			  
-			  <li>
-				<a href="#">IoT</a>
-			  </li>
-			</ul>
-		  </li>
-		  
-		  <li class="nav__item">
-			<h2 class="nav__title">Legal</h2>
-			
-			<ul class="nav__ul">
-			  <li>
-				<a href="#">Privacy Policy</a>
-			  </li>
-			  
-			  <li>
-				<a href="#">Terms of Use</a>
-			  </li>
-			  
-			  <li>
-				<a href="#">Sitemap</a>
-			  </li>
-			</ul>
-		  </li>
-		</ul>
-		
-		<div class="legal">
-		  <p>&copy; 2019 Something. All rights reserved.</p>
-		  
-		  <div class="legal__links">
-			<span>Made with <span class="heart">♥</span> remotely from Anywhere</span>
-		  </div>
-		</div>
-	  </footer>
-
-	<!-- Enlace al archivo de JavaScript -->
-	<script src="javascript/apps.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</main>
 </body>
-
-</html>

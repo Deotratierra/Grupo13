@@ -14,11 +14,8 @@
 		integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-
 	<!-- Enlace al archivo de hoja de estilos personalizadas -->
 	<link rel='stylesheet' href='css/estilos.css'>
-	<!--Estilo formulario wizard-->
-	<link rel="stylesheet" href="css/formulariowizard.css">
 	<!-- Título de la página -->
 	<title>Proyecto Final</title>
 	<!-- Enlace al icono de la página -->
@@ -45,7 +42,7 @@
 	<main>
 		<section class="home">
 			<video class="video-slide active" src="vids/1.mp4" autoplay muted loop></video>
-			<video class="8video-slide" src="vids/2.mp4" autoplay muted loop></video>
+			<video class="video-slide" src="vids/2.mp4" autoplay muted loop></video>
 			<video class="video-slide" src="vids/3.mp4" autoplay muted loop></video>
 			<div class="content active">
 				<h1>Disfrutá de <br><span>lugares increíbles</span></h1>
@@ -76,12 +73,8 @@
 		</section>
 
 
-		<!--Js del slider-->
-		<script type="text/javascript" src="script/slider.js"></script>
-
-
-
-
+		<script type="text/javascript" src="/script/slider.js">
+		</script>
 		<!-- info cards cambio imagenes -->
 		<section class="tarjetas">
 			<div class="card">
@@ -189,68 +182,5 @@
 				</div>
 			</section>
 		</section>
-
-
-		<!--Formulario wizard-->
-		<div>
-			<main>
-				<div class="stepper">
-					<div class="step--1 step-active"></div>
-					<div class="step--2"></div>
-					<div class="step--3"></div>
-					<div class="step--4"></div>
-				</div>
-				<form class="form form-active">
-					<div class="form--header-container">
-						<h1 class="form--header-title">
-							New account
-						</h1>
-
-						<p class="form--header-text">
-							Tell us more about you.
-						</p>
-					</div>
-					<input type="text" placeholder="Name" />
-					<input type="text" placeholder="Email" />
-					<input type="text" placeholder="Password" />
-					<button class="form__btn" id="btn-1">Next</button>
-				</form>
-				<form class="form">
-					<div class="form--header-container">
-						<h1 class="form--header-title">
-							Company Info
-						</h1>
-
-						<p class="form--header-text">
-							Tell us more about your company.
-						</p>
-					</div>
-
-					<input type="text" placeholder="Company Name" />
-					<input type="text" placeholder="Job title" />
-					<input type="text" placeholder="Location" />
-					<button class="form__btn" id="btn-2-prev">Previous</button>
-					<button class="form__btn" id="btn-2-next">Next</button>
-				</form>
-				<form class="form">
-					<div class="form--header-container">
-						<h1 class="form--header-title">
-							Social account
-						</h1>
-
-						<p class="form--header-text">
-							Tell us more about your social account.
-						</p>
-					</div>
-					<input type="text" placeholder="Linkedin" />
-					<input type="text" placeholder="Twitter" />
-					<input type="text" placeholder="Github" />
-
-					<button class="form__btn" id="btn-3">Submit</button>
-				</form>
-				<div class="form--message"></div>
-			</main>
-		</div>
-
-		<script src="/script/formulario.js"></script>
+	</main>
 </body>

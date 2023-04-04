@@ -100,16 +100,17 @@ header .navigation .navigation-items a:hover:before {
   display: block;
 }
 
-.home .content h1 {
+.home .content h2 {
   font-size: 4em;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 5px;
   line-height: 75px;
   margin-bottom: 40px;
+  transition: 0.5s ease;
 }
 
-.home .content h1 span {
+.home .content h2 span {
   font-size: 1.2em;
   font-weight: 600;
 }
@@ -126,6 +127,7 @@ header .navigation .navigation-items a:hover:before {
   font-weight: 500;
   text-decoration: none;
   border-radius: 2px;
+  transition: 0.5s ease;
 }
 
 .home .content a:hover {
@@ -210,7 +212,7 @@ header .navigation .navigation-items a:hover:before {
   transition-property: clip-path;
 }
 
-@media (max-width: 1040px) {
+@media (max-width: 1000px) {
   header {
     padding: 12px 20px;
   }
@@ -283,22 +285,59 @@ header .navigation .navigation-items a:hover:before {
   }
 }
 
+@media (max-width: 720px) {
+  .home .content h2 {
+    font-size: 40px;
+    letter-spacing: 3px;
+    line-height: 45px;
+    margin-bottom: 20px;
+  }  
 
+  .home .content h2 span {
+      font-size: 40px;
+  }
+
+  .home .content a {
+    background: #fff;
+    padding: 15px 25px;
+    color: #1688AC;
+    font-size: 15px;
+  }
+
+  .slider-navigation {
+    transform: translateY(90px);
+  }
+}
+
+
+/* Tarjetas */
 
 .tarjetas {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  position: relative;
+  margin: auto;
   width: 100%;
-  
-  background-color: rgb(0, 15, 37);
+  background: #1688AC;
+}
+
+.cont_cards {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    padding: 15px 0 15px 0;
 }
 
 .card {
   position: relative;
   width: 300px;
   height: 350px;
-  margin: 20px 30px 20px 0;
+  margin: 15px 15px 15px 15px;
+  transition: 0.5s ease;
 }
 
 .card .face {
@@ -346,8 +385,17 @@ header .navigation .navigation-items a:hover:before {
   box-shadow: 0 5px 10px #000;
 }
 
+.card .back p {
+  font-size: 15px;
+  margin: 0;
+  margin-top: 5px;
+  vertical-align: top;
+  height: 100%;
+} 
+
+
 .card .back a {
-  padding:  7px 20px;
+  padding:  5px 19px;
   border-radius: 7px;
   text-decoration: none;
   background: #fff;
@@ -415,14 +463,121 @@ header .navigation .navigation-items a:hover:before {
     }
     } */
 
-    @media (min-width: 40rem) {
-      .cards_item {
-        width: 50%;
-      }
-    }
-    
-    @media (min-width: 56rem) {
-      .cards_item {
-        width: 33.3333%;
-      }
-    }
+@media (max-width: 1000px) {
+  .card {
+    width: 250px;
+    height: 300px;
+  }
+}
+
+.card h3 {
+  font-size: 14px;
+}
+
+.card .back p {
+  font-size: 12.5px;
+}
+
+.card .back a {
+  font-size: 14px;
+  padding:  4px 17px;
+}
+
+@media (max-width: 840px) {
+  .card {
+    width: 200px;
+    height: 250px;
+  }
+
+  .card h3 {
+    font-size: 13px;
+  }
+  
+  .card .back p {
+    font-size: 9.5px;
+  }
+
+  .card .back a {
+    font-size: 13px;
+    padding:  3px 15px;
+  }
+}
+
+@media (max-width: 690px) {
+  .card {
+    width: 250px;
+    height: 300px;
+  }
+
+  .card h3 {
+    font-size: 14px;
+  }
+  
+  .card .back p {
+    font-size: 12.5px;
+  }
+
+  .card .back a {
+    font-size: 14px;
+    padding:  4px 17px;
+  }
+}
+
+@media (max-width: 560px) {
+  .card {
+    width: 200px;
+    height: 250px;
+  }
+
+  .card h3 {
+    font-size: 13px;
+  }
+  
+  .card .back p {
+    font-size: 9.5px;
+  }
+
+  .card .back a {
+    font-size: 13px;
+    padding:  3px 15px;
+  }
+}
+
+@media (max-width: 460px) {
+  .card {
+    width: 300px;
+    height: 350px;
+  }
+
+  .card h3 {
+    font-size: 16px;
+  }
+  
+  .card .back p {
+    font-size: 15px;
+  }
+
+  .card .back a {
+    font-size: 16px;
+    padding:  5px 19px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .card h3 {
+    font-size: 16px;
+  }
+  
+  .card .back p {
+    font-size: 15px;
+  }
+
+  .card .back a {
+    font-size: 16px;
+  }
+
+  .card .back a {
+    font-size: 16px;
+    padding:  5px 19px;
+  }
+}

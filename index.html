@@ -294,8 +294,7 @@
 
 	<!-- Nosotros -->
 	<div id="nosotros" >
-		<h2 class="nostitulo"> Elegi Dreams Travel</h2>
-
+		<h2 class="nostitulo"> ¿Por qué Dream Travel?</h2>
 		<div class="contenedor-caja">
 			
 			<div class="caja">
@@ -306,17 +305,18 @@
 			</div>
 
 			<div class="caja">
+				<i class="fa fa-check-circle" aria-hidden="true"></i>
+				<h3> Ventajas </h3>
 				<p>Todos nuestros viajes están elaborados con altos estándares de calidad. Contamos con
-					hoteles de primer
-					nivel y
+					hoteles de primer nivel y
 					transportes de modernísimas unidades.</p>
 			</div>
 
 			<div class="caja">
+				<i class="fa-sharp fa-solid fa-wand-magic-sparkles"></i>
+				<h3> Calidad </h3>
 				<p> Nuestros coordinadores y guías matriculados hacen de cada viaje el mejor logrando el
-					bienestar de los
-					pasajeros.
-
+					bienestar de los pasajeros.
 				<p>La atención personalizada y la calidad en el servicio son nuestros principales
 					valores.</p>
 				</p>
@@ -327,6 +327,57 @@
 
 	</div>
 
+
+<!-- formulario de contacto -->
+
+<div class="formulario">
+Contactanos
+	<!-- Bootstrap 5 starter form -->
+	<form id="contactForm" data-sb-form-api-token="API_TOKEN">
+  
+	  <!-- Name input -->
+	  <div class="mb-3">
+		<label class="form-label" for="name">Nombre</label>
+		<input class="form-control" id="name" type="text" placeholder="nombre" data-sb-validations="required" />
+		<div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
+	  </div>
+  
+	  <!-- Email address input -->
+	  <div class="mb-3">
+		<label class="form-label" for="emailAddress">Email </label>
+		<input class="form-control" id="emailAddress" type="email" placeholder="Email " data-sb-validations="required, email" />
+		<div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
+		<div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
+	  </div>
+  
+	  <!-- Message input -->
+	  <div class="mb-3">
+		<label class="form-label" for="message">Mensaje</label>
+		<textarea class="form-control" id="message" type="text" placeholder="Mensaje" style="height: 10rem;" data-sb-validations="required"></textarea>
+		<div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
+	  </div>
+  
+	  <!-- Form submissions success message -->
+	  <div class="d-none" id="submitSuccessMessage">
+		<div class="text-center mb-3">Form submission successful!</div>
+	  </div>
+  
+	  <!-- Form submissions error message -->
+	  <div class="d-none" id="submitErrorMessage">
+		<div class="text-center text-danger mb-3">Error sending message!</div>
+	  </div>
+  
+	  <!-- Form submit button -->
+	  <div class="d-grid">
+		<button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
+	  </div>
+  
+	</form>
+  
+  </div>
+  
+  <!-- SB Forms JS -->
+  <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 
 	<!-- Footer -->
 
@@ -348,9 +399,7 @@
 				<br>
 				<p>© 2023 Plataforma de viajes para turismo</p>
 			</div>
-			
-			
-	
+							
 			<!-- Footer redes sociales -->
 			<div class=" col-md-4 redes">
 				Seguinos <br>
@@ -365,13 +414,11 @@
 			<div class="col-md-2 cont">
 				<address>
 					Contacto <br>
-
 					<i class="fa-solid fa-phone"> </i> 1123659595888
 					<br>
 					<i class="fa-solid fa-envelope"> </i> viajesenn@email.com
 					<br>
 					<i class="fa-solid fa-location-dot"> </i> 9 de julio, Nº 3252
-
 				</address>
 			</div>
 
@@ -387,7 +434,6 @@
 					</div>
 				</form>
 			</div>
-
 
 
 	</footer>

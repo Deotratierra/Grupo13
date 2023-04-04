@@ -468,7 +468,7 @@ header .navigation .navigation-items a:hover:before {
     width: 250px;
     height: 300px;
   }
-}
+
 
 .card h3 {
   font-size: 14px;
@@ -481,6 +481,7 @@ header .navigation .navigation-items a:hover:before {
 .card .back a {
   font-size: 14px;
   padding:  4px 17px;
+}
 }
 
 @media (max-width: 840px) {
@@ -563,21 +564,3 @@ header .navigation .navigation-items a:hover:before {
   }
 }
 
-@media (min-width: 1000px) {
-  .card h3 {
-    font-size: 16px;
-  }
-  
-  .card .back p {
-    font-size: 15px;
-  }
-
-  .card .back a {
-    font-size: 16px;
-  }
-
-  .card .back a {
-    font-size: 16px;
-    padding:  5px 19px;
-  }
-}

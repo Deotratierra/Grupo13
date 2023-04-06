@@ -28,7 +28,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 15px 200px;
-  transition: 0.5s ease;
+  transition: 0.3s ease-in-out;
 }
 
 header .brand {
@@ -43,7 +43,19 @@ header .navigation {
   position: relative;
 }
 
-header .navigation .navigation-items a {
+.navigation-items a {
+  position: relative;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 30px;
+  transition: 0.3s ease;
+}
+
+.navigation-items i {
+  font-style: normal;
+  cursor: pointer;
   position: relative;
   color: #fff;
   font-size: 1em;
@@ -64,9 +76,196 @@ header .navigation .navigation-items a:before {
   transition: 0.3s ease;
 }
 
+header .navigation .navigation-items i:before {
+  content: "";
+  position: absolute;
+  background: #fff;
+  width: 0%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s ease;
+}
+
 header .navigation .navigation-items a:hover:before {
   width: 100%;
 }
+
+header .navigation .navigation-items i:hover:before {
+  width: 100%;
+}
+
+/* Header Sticky */
+
+header.sticky {
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(5px);
+}
+
+header.sticky .brand {
+  color: #480ca8;
+}
+
+header.sticky .menu-btn {
+  display: none;
+}
+
+header.sticky .menu-btn {
+  background: url(../imgs/hamb_right_2.svg)no-repeat;
+  background-size: 30px;
+  background-position: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+header.sticky .menu-btn.active {
+  background: url(../imgs/x-square_2.svg)no-repeat;
+  background-size: 30px;
+  background-position: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+
+header.sticky .navigation-items a {
+  color: #480ca8;
+}
+
+header.sticky .navigation-items i {
+  color: #480ca8;
+}
+
+header.sticky .navigation .navigation-items a:before {
+  background: #480ca8;
+}
+
+header.sticky .navigation .navigation-items i:before {
+  background: #480ca8;
+}
+
+/* modal */
+
+/* Estilos para la ventana modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-contenido {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.cerrar {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.cerrar:hover,
+.cerrar:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* Ajustes Modal 
+
+.modal-content {
+  background: #1688AC;
+  width: 600px;
+  height: 400px;
+}
+
+.modal-header {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: yellow;
+}
+
+.modal-header button {
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 40px;
+}
+
+.modal-header h5 {
+  font-size: 18px;
+  padding-top: 10px;
+  font-weight: 600;
+}
+
+.modal-body {
+  background-color: darkmagenta;
+  padding: 0;
+}
+
+.form_p1 {
+  display: flex;
+  background-color: darkgreen;
+  position: relative;
+  justify-content: center;
+}
+
+.modal-body #email1 {
+  background-color: brown;
+  width: 270px;
+  margin-right: 20px;
+}
+
+.modal-body #password1 {
+  width: 270px;
+}
+
+.form_p2 {
+  display: flex;
+  background-color: darkgreen;
+  position: relative;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+.modal-body #password2 {
+  background-color: brown;
+  width: 270px;
+  margin-right: 20px;
+}
+
+.modal-body #password3 {
+  width: 270px;
+}
+
+.modal-body #opciones {
+  width: 270px;
+}
+
+.form_p2 .cont_mensaje {
+  padding-left: 20px;
+}
+
+.modal-content .btn-success {
+  padding: 0;
+  margin: 0;
+} */
 
 
 /* Carrousel */
@@ -77,9 +276,10 @@ header .navigation .navigation-items a:hover:before {
   width: 100%;
   min-height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   flex-direction: column;
   background: #2696E9;
+  transition: ease-in-out;
 }
 
 .home:before {
@@ -96,7 +296,7 @@ header .navigation .navigation-items a:hover:before {
 .home .content {
   z-index: 888;
   color: #fff;
-  width: 70%;
+  width: 80%;
   margin-top: 50px;
   display: none;
 }
@@ -106,8 +306,8 @@ header .navigation .navigation-items a:hover:before {
 }
 
 .home .content h2 {
-  font-size: 4em;
-  font-weight: 900;
+  font-size: 3em;
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 5px;
   line-height: 75px;
@@ -116,8 +316,8 @@ header .navigation .navigation-items a:hover:before {
 }
 
 .home .content h2 span {
-  font-size: 1.2em;
-  font-weight: 600;
+  font-size: 1.5em;
+  font-weight: 900;
 }
 
 .home .content p {
@@ -125,9 +325,9 @@ header .navigation .navigation-items a:hover:before {
 }
 
 .home .content a {
-  background: #fff;
+  background: #b5179e;
   padding: 15px 35px;
-  color: #1688AC;
+  color: #fff;
   font-size: 1.1em;
   font-weight: 500;
   text-decoration: none;
@@ -136,30 +336,71 @@ header .navigation .navigation-items a:hover:before {
 }
 
 .home .content a:hover {
-  background: #1688AC;
-  color: #fff;
+  background: #fff;
+  color: #b5179e;
   }
   
-.home .media-icons {
+.home .icons {
   z-index: 888;
   position: fixed;
-  right: 30px;
   display: flex;
   flex-direction: column;
   transition: 0.5s ease;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
 }
 
-.home .media-icons a {
-  color: #fff;
+.home .icons a {
+  color: #480ca8;
   font-size: 1.6em;
-  transition: 0.3s ease;
+  text-decoration: none;
+  transition: 0.5s ease;
 }
 
-.home .media-icons a:not(:last-child) {
+.home .icons .fa-sharp {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #480ca8;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(5px);
+}
+
+.home .icons #modo {
+  width: 40px;
+  height: 40px;
+  background: #480ca8C;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #480ca8;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(5px);
+}
+
+.home .icons #modo {
+  color: #480ca8;
+  font-size: 1.6em;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.home .icons a:not(:last-child) {
   margin-bottom: 20px;
 }
 
-.home .media-icons a:hover {
+.home .icons a:hover {
+  transform: scale(1.3);
+}
+
+.home .icons #modo:hover {
   transform: scale(1.3);
 }
 
@@ -194,7 +435,7 @@ header .navigation .navigation-items a:hover:before {
 }
 
 .slider-navigation .nav-btn.active {
-  background: #2696E9;
+  background: #b5179e;
 }
 
 .slider-navigation .nav-btn:not(:last-child) {
@@ -217,6 +458,18 @@ header .navigation .navigation-items a:hover:before {
   transition-property: clip-path;
 }
 
+/* Opacidad */
+
+.home::before {
+  content: "";
+  position: absolute;
+  z-index: 666;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 195, 255, 0.2);
+}
 
 /* Responsive de Header */
 
@@ -233,6 +486,12 @@ header .navigation .navigation-items a:hover:before {
   .home .media-icons {
     right: 15px;
   }
+
+  header.sticky .menu-btn {
+    display: block;
+  }
+
+  /* Menu venana */
 
   header .navigation {
     display: none;
@@ -256,7 +515,18 @@ header .navigation .navigation-items a:hover:before {
     margin: 20px;
   }
 
+  header .navigation .navigation-items i {
+    color: #222;
+    font-size: 1.2em;
+    margin: 20px;
+  }
+
   header .navigation .navigation-items a:before {
+    background: #222;
+    height: 5px;
+  }
+
+  header .navigation .navigation-items i:before {
     background: #222;
     height: 5px;
   }
@@ -274,6 +544,8 @@ header .navigation .navigation-items a:hover:before {
     box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
   }
 
+  /* Hamburguesa */
+
   .menu-btn {
     background: url(../imgs/hamb_right.svg)no-repeat;
     background-size: 30px;
@@ -287,8 +559,11 @@ header .navigation .navigation-items a:hover:before {
   .menu-btn.active {
     z-index: 999;
     background: url(../imgs/x-square.svg)no-repeat;
-    background-size: 25px;
+    background-size: 30px;
     background-position: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
     transition: 0.3s ease;
   }
 }
@@ -309,9 +584,9 @@ header .navigation .navigation-items a:hover:before {
   }
 
   .home .content a {
-    background: #fff;
+    background: #b5179e;
     padding: 15px 25px;
-    color: #1688AC;
+    color: #fff;
     font-size: 15px;
   }
 
@@ -403,7 +678,7 @@ header .navigation .navigation-items a:hover:before {
 
 .card .back {
   transform: perspective(600px) rotateY(180deg);
-  background: rgb(3, 35, 54);
+  background: #4895ef;
   padding: 15px;
   color: #f3f3f3;
   display: flex;
@@ -416,6 +691,7 @@ header .navigation .navigation-items a:hover:before {
 .card .back h3 {
 	padding-top: 0;
 	margin-top: 0;
+  color: #480ca8;
 }
 
 .card .back p {
@@ -430,14 +706,14 @@ header .navigation .navigation-items a:hover:before {
   padding:  5px 19px;
   border-radius: 7px;
   text-decoration: none;
-  background: #fff;
-  color: #1688AC;
+  background: #480ca8;
+  color: #fff;
   font-weight: 600;
 }
 
 .card .back a:hover {
-  background: #1688AC;
-  color: #fff;
+  background: #fff;
+  color: #480ca8;
 }
 
 .card:hover .front {
@@ -565,22 +841,27 @@ header .navigation .navigation-items a:hover:before {
 
 
 /* Seccion acerca de nosotros */
-#nosotros {
- 
-  background-color: rgb(252, 252, 252);
-  display: flex;
-  flex-direction: column;
-  height: 700px;
-  width: 100%;
-  padding: 30px 70px;  
-  justify-content: space-evenly;
 
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',sans-serif;  
+.nos {
+  position: relative;
+  max-width: 100%;
 }
 
 .nostitulo {
-	margin-bottom: 15px;
+  margin-bottom: 30px;
 	text-align: center;
+  font-weight: 700;
+}
+
+#nosotros {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 0 30px 0;  
+  justify-content: space-evenly;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',sans-serif;  
 }
 
 .contenedor-caja {
@@ -591,12 +872,12 @@ header .navigation .navigation-items a:hover:before {
 }
 
 .caja {
-	background-color: rgb(0, 15, 37);
+	background-color: #480ca8;
 	color: #fcf5eb;
-	width: 25%;
-	height: 300px;
+	width: 300px;
+	height: 250px;
 	text-align: center;
-	padding: 50px;
+	padding: 20px;
 	border-radius: 10px;
 }
 
@@ -604,24 +885,39 @@ header .navigation .navigation-items a:hover:before {
 /* Footer */
 .footer {
   display: flex;
+  max-width: 100%;
   flex-flow: column wrap;
   color:#ffffff;
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',sans-serif;
-   
 }
 
 .mifooter {
-	background-color: #111324;
+	background-color: #480ca8;
 	height: 236px;
 }
 
 .texto-desarrollo {
-  background-color: #100c1d ; 
+  position: relative;
+  background-color: #480ca8;
+  width: 100%;
   height: 200px;
-  padding: 30px 500px 50px 90px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif,sans-serif;
-  font-size: 14px;
-  line-height: 24px;    
+  align-items: center;
+}
+
+.texto-desarrollo h3 {
+  font-size: 2.5em;
+  max-width: 100%;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.texto-desarrollo p {
+  font-size: 1.2em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
 }
 
 .cont {
@@ -660,4 +956,83 @@ header .navigation .navigation-items a:hover:before {
   object-position: center;
   height: 100%;
   width: 100%;
+}
+
+/* Modo Dark/White */
+
+/* Estilo para el header en modo oscuro */
+body.modo-oscuro header {
+  background: rgba(49, 0, 95, 0.7);
+  backdrop-filter: blur(5px);
+}
+
+.modo-oscuro .navigation-items a {
+  color: #ffffff;
+}
+
+.modo-oscuro .navigation-items i {
+  color: #ffffff;
+}
+
+.modo-oscuro .home::before {
+  background: rgb(49, 0, 95, 0.2);
+}
+
+.modo-oscuro .home .content a {
+  background-color: rgba(49, 0, 95);
+  color: #ffffff;
+}
+
+.modo-oscuro header.sticky .brand {
+  color: #ffffff;
+}
+
+.modo-oscuro header.sticky a {
+  color: #ffffff;
+}
+
+.modo-oscuro .home .icons .fa-sharp {
+  background: rgba(49, 0, 95);
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.modo-oscuro .home .icons #modo {
+  background: rgba(49, 0, 95);
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.modo-oscuro .slider-navigation .nav-btn.active {
+  background: rgba(49, 0, 95);
+}
+
+.modo-oscuro .tarjetas {
+  background-color: rgba(49, 0, 95);
+}
+
+.modo-oscuro .card .back {
+  background: #1a0022;
+}
+
+.modo-oscuro .nos {
+  background: #1a0022;
+}
+
+.modo-oscuro .nostitulo {
+  color: #fff;
+}
+
+.modo-oscuro .caja {
+	background-color: #1b0047;
+  border: 2px solid #fff;
+}
+
+.modo-oscuro .texto-desarrollo {
+  background-color: #1b0047;
+}
+
+.modo-oscuro .mifooter {
+	background-color: #1b0047;
+	height: 236px;
 }

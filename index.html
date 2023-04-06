@@ -36,11 +36,83 @@
 				<a href="#">Paquetes</a>
 				<a href="#">Nosotros</a>
 				<a href="#">Desarrollo</a>
-				<a href="#">Contacto</a>
+				<i id="btn-modal">Contacto</i>
 			</div>
 		</div>
 	</header>
 
+
+<!-- Contenedor de la ventana modal -->
+<div id="modal" class="modal">
+  <div class="modal-contenido">
+    <span class="cerrar">&times;</span>
+    <h2>Ignorá este modal (x ahora)</h2>
+    <p>Reparando el formulario de contacto.</p>
+  </div>
+</div>
+
+	<!-- Modal 
+
+	<div class="modal fade" id="form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header text-center border-bottom-0">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h5 class="modal-title" id="exampleModalLabel">Formulario de Consulta</h5>
+				</div>
+				<form>
+					<div class="modal-body">
+						<div class="form_p1">
+							<div class="form-group">
+								<label for="email1">Nombre y Apellido</label>
+								<input type="email" class="form-control" id="email1" aria-describedby="emailHelp"
+									placeholder="Ingrese su nombre y apellido">
+								<small id="emailHelp" class="form-text text-muted">Your information is safe with
+									us.</small>
+							</div>
+	
+							<div class="form-group">
+								<label for="password1">Email</label>
+								<input type="password" class="form-control" id="password1" placeholder="Ingrese su correo electrónico">
+							</div>
+						</div>
+					
+					<div class="form_p2">
+						<div class="form-group">
+							<label for="password1">Teléfono</label>
+							<input type="password" class="form-control" id="password2" placeholder="Ingrese su teléfono">
+						</div>
+						<div class="cmconocio">
+						<label for="opciones">¿Cómo nos conoció?</label>
+							<select id="opciones" name="opciones">
+  							<option value="opcion1">Google</option>
+								<option value="opcion1">YouTube</option>
+  							<option value="opcion3">Instagram</option>
+  							<option value="opcion4">Facebook</option>
+								<option value="opcion5">Twitter</option>
+								<option value="opcion6">Televisión</option>
+								<option value="opcion7">Otro</option>
+						</select>
+					</div>
+					</div>
+					<div class="form-group cont_mensaje">
+						<label for="mensaje">Mensaje</label>
+						<input type="text" class="form-control" id="mensaje" placeholder="Escriba su mensaje:">
+					</div>
+				</div>
+					</div>
+						
+					<div class="modal-footer border-top-0 d-flex justify-content-center">
+						<button type="submit" class="btn btn-success">Submit</button>
+					</div>
+					</form>
+				</div>
+		</div>
+	</div>
+	</div> -->
 
 	<!-- Video carrousell (By POL - NO BOOTSTRAP) -->
 	<main>
@@ -49,7 +121,7 @@
 			<video class="video-slide" src="vids/2.mp4" autoplay muted loop></video>
 			<video class="video-slide" src="vids/3.mp4" autoplay muted loop></video>
 			<div class="content active">
-				<h2>Disfrutá de <br><span>lugares increíbles</span></h2>
+				<h2>Visitá <br><span>lugares increíbles</span></h2>
 				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, aut?</p>
 				<a href="#">Buscá tu destino</a>
 			</div>
@@ -64,12 +136,11 @@
 				<a href="#">Buscá tu destino</a>
 			</div>
 
-			<div class="media-icons">
-				<a href="#"><i class="fab fa-facebook-f"></i></a>
-				<a href="#"><i class="fab fa-instagram"></i></a>
-				<a href="#"><i class="fab fa-twitter"></i></a>
-				<a href="#"><i class="fa-sharp fa-solid fa-angles-up" style="color: #ffffff;"></i></a>
+			<div class="icons">
+				<a href="#"><i class="fa-sharp fa-solid fa-angles-up"></i></a>
+				<i id="modo" onclick="cambiarModo()" class="fa-solid fa-moon"></i>
 			</div>
+			
 			<div class="slider-navigation">
 				<div class="nav-btn active"></div>
 				<div class="nav-btn"></div>
@@ -195,6 +266,7 @@
 	</main>
 
 <!-- Nosotros -->
+<section class="nos">
 <div id="nosotros" >
 	<h2 class="nostitulo"> ¿Por qué elegir Dream Travel?</h2>
 	<div class="contenedor-caja">
@@ -224,15 +296,13 @@
 			</p>
 		</div>
 	</div>
-
-	
-
 </div>
+</section>
 
 <!-- Footer -->
 <footer class="footer">
 	<div class="texto-desarrollo">
-		<h2> Equipo de desarrollo </h2>
+		<h3>Equipo de desarrollo</h3>
 		<br>
 		<p> Somos Pol, Exe, Ezequiel, Gabriela y Martin; juntos formamos un equipo de dearrolladores Web.
 			Combinamos diseño y tecnología creando experiencias significativas en la vida de las personas.</p>
@@ -286,9 +356,9 @@
 	</footer>
 	
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+	<script src="script/main.js"></script>
 </body>
 
 </html>

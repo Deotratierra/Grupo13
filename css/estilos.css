@@ -838,125 +838,173 @@ header.sticky .navigation .navigation-items i:before {
     width: 33.3333%;
   }
 }
+/* ----------------------------------------------- */
 
-
-/* Seccion acerca de nosotros */
-
-.nos {
-  position: relative;
-  max-width: 100%;
-}
-
-.nostitulo {
-  margin-bottom: 30px;
-	text-align: center;
-  font-weight: 700;
-}
-
-#nosotros {
+#nosotros{
+ 
+  background-color: rgb(252, 252, 252);
   display: flex;
   flex-direction: column;
+  height: 800px;
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px 0 30px 0;  
+    
   justify-content: space-evenly;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',sans-serif;  
 }
 
-.contenedor-caja {
-	display: flex;
+.nostitulo{
+ margin-bottom: 15px;
+
+text-align: center;
+
+}
+
+.contenedor-caja{
+display: flex;
   flex-direction: row;
   flex-wrap: wrap;/* autoacomodable */
   justify-content: space-evenly;
 }
 
-.caja {
-	background-color: #480ca8;
-	color: #fcf5eb;
-	width: 300px;
-	height: 250px;
-	text-align: center;
-	padding: 20px;
-	border-radius: 10px;
+.caja{
+background-color:#7f00b2;
+color: #fcf5eb;
+width: 25%;
+height: 500px;
+
+text-align: center;
+padding:100px;
+border-radius: 10px;
+font-size: 14px;
+
+}
+ /* seccion  nosotros con imagen de fondo */
+.contenedor-rectangulo {
+  display: flex;
+       flex-direction: row;
+       height: 300px;
+       width: 100%;
+       margin-bottom: 0px;
+
+       background-image: url("https://images.unsplash.com/photo-1486134030336-39b1094bf33e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1007&q=80");
+       background-position: center;
+       background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;/* desplazamiento de iagen de fondo */
+}
+
+.destinos {
+     
+background-color: #8000b26c;
+justify-content: space-between;  
+color: #fdfcff;
+width: 75%;
+height: 300px;
+text-align: center;  
+padding: 30px;
+
 }
 
 
-/* Footer */
+
+/* footer */
 .footer {
   display: flex;
-  max-width: 100%;
   flex-flow: column wrap;
   color:#ffffff;
-	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',sans-serif;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',sans-serif;
+   
+}
+.mifooter{
+background-color:#15297c;
+height: 236px;
+
+}
+/* Desarrolladores--------------------------------- */
+
+.contenedor-desarrollo{
+ display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+height: 200px;
+width: 100%;
+background:#8000b2;
 }
 
-.mifooter {
-	background-color: #480ca8;
-	height: 236px;
-}
+.texto-desarrollo{
 
-.texto-desarrollo {
-  position: relative;
-  background-color: #480ca8;
-  width: 100%;
-  height: 200px;
+  width: 50%;
+  margin-left: 80px ;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif,sans-serif;
-  align-items: center;
+  font-size: 14px;
+  line-height: 20px;
+    
+}
+.logos-git{
+  display: flex;
+justify-content: space-evenly;
+ width: 50%;
 }
 
-.texto-desarrollo h3 {
-  font-size: 2.5em;
-  max-width: 100%;
-  margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
+.logos-git img{
+height: 60px;
+border-radius: 50%;
+border: solid 2px gray;
+transition: 0.5s;
+
 }
 
-.texto-desarrollo p {
-  font-size: 1.2em;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 100%;
+.logos-git img:hover{
+  transform: scale(1.5);/*logos git efectos*/
 }
 
-.cont {
+/*logo- seguinos---- contacto---------------------------- */
+.cont{
   margin-top: 50px ;
   padding-left:0px;
   align-content: center;
   font-size: small;
 }
-
-.cont i {
+.cont i{
   margin: 10px 0px;
+   
 }
+.redes{
+ text-align: center; 
+margin-top: 50px;
+font-size: medium;
 
-.redes {
-	text-align: center; 
-	margin-top: 50px;
-	font-size: small;
 }
-
-.redes i {
+.redes i{
   font-size: 250%; 
   margin: 20px 10px;
+
 }
 
-.newsletter {
+.newsletter{
   margin-top: 50px ;
   margin-left: 0px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif,sans-serif;
+ color: #fcf5eb;
+}
+.input-group{
+  display: flex  ;
+
 }
 
-.input-group {
-  display: flex;
-}
 
-.logo {
+.logo{
+
   object-position: center;
-  height: 100%;
-  width: 100%;
+  height: 80%;
+  width: 80%;
 }
+
+
+
+/* ----------------------------------------------- */
+
 
 /* Modo Dark/White */
 

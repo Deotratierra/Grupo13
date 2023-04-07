@@ -8,7 +8,12 @@
 	<meta http-equiv='X-UA-Compatible' content="IE=edge">
 	<!-- Escala de la página según el tamaño del dispositivo del usuario -->
 	<meta name='viewport' content="width=device-width, initial-scale=1.0">
+<!-- Enlace al archivo de hoja de estilos de Bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+	integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+	crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
 		integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
@@ -28,15 +33,86 @@
 		<div class="menu-btn"></div>
 		<div class="navigation">
 			<div class="navigation-items">
-				<a href="#">Inicio</a>
 				<a href="#">Paquetes</a>
 				<a href="#">Nosotros</a>
 				<a href="#">Desarrollo</a>
-				<a href="#">Contacto</a>
+				<i id="btn-modal">Contacto</i>
 			</div>
 		</div>
 	</header>
 
+
+<!-- Contenedor de la ventana modal -->
+<div id="modal" class="modal">
+  <div class="modal-contenido">
+    <span class="cerrar">&times;</span>
+    <h2>Ignorá este modal (x ahora)</h2>
+    <p>Reparando el formulario de contacto.</p>
+  </div>
+</div>
+
+	<!-- Modal 
+
+	<div class="modal fade" id="form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header text-center border-bottom-0">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h5 class="modal-title" id="exampleModalLabel">Formulario de Consulta</h5>
+				</div>
+				<form>
+					<div class="modal-body">
+						<div class="form_p1">
+							<div class="form-group">
+								<label for="email1">Nombre y Apellido</label>
+								<input type="email" class="form-control" id="email1" aria-describedby="emailHelp"
+									placeholder="Ingrese su nombre y apellido">
+								<small id="emailHelp" class="form-text text-muted">Your information is safe with
+									us.</small>
+							</div>
+	
+							<div class="form-group">
+								<label for="password1">Email</label>
+								<input type="password" class="form-control" id="password1" placeholder="Ingrese su correo electrónico">
+							</div>
+						</div>
+					
+					<div class="form_p2">
+						<div class="form-group">
+							<label for="password1">Teléfono</label>
+							<input type="password" class="form-control" id="password2" placeholder="Ingrese su teléfono">
+						</div>
+						<div class="cmconocio">
+						<label for="opciones">¿Cómo nos conoció?</label>
+							<select id="opciones" name="opciones">
+  							<option value="opcion1">Google</option>
+								<option value="opcion1">YouTube</option>
+  							<option value="opcion3">Instagram</option>
+  							<option value="opcion4">Facebook</option>
+								<option value="opcion5">Twitter</option>
+								<option value="opcion6">Televisión</option>
+								<option value="opcion7">Otro</option>
+						</select>
+					</div>
+					</div>
+					<div class="form-group cont_mensaje">
+						<label for="mensaje">Mensaje</label>
+						<input type="text" class="form-control" id="mensaje" placeholder="Escriba su mensaje:">
+					</div>
+				</div>
+					</div>
+						
+					<div class="modal-footer border-top-0 d-flex justify-content-center">
+						<button type="submit" class="btn btn-success">Submit</button>
+					</div>
+					</form>
+				</div>
+		</div>
+	</div>
+	</div> -->
 
 	<!-- Video carrousell (By POL - NO BOOTSTRAP) -->
 	<main>
@@ -45,26 +121,26 @@
 			<video class="video-slide" src="vids/2.mp4" autoplay muted loop></video>
 			<video class="video-slide" src="vids/3.mp4" autoplay muted loop></video>
 			<div class="content active">
-				<h1>Disfrutá de <br><span>lugares increíbles</span></h1>
+				<h2>Visitá <br><span>lugares increíbles</span></h2>
 				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, aut?</p>
 				<a href="#">Buscá tu destino</a>
 			</div>
 			<div class="content">
-				<h1>Viví experiencias <br><span>únicas</span></h1>
+				<h2>Viví experiencias <br><span>únicas</span></h2>
 				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, aut?</p>
 				<a href="#">Buscá tu destino</a>
 			</div>
 			<div class="content">
-				<h1>Descubrí <br><span>Argentina</span></h1>
+				<h2>Descubrí <br><span>Argentina</span></h2>
 				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, aut?</p>
 				<a href="#">Buscá tu destino</a>
 			</div>
 
-			<div class="media-icons">
-				<a href="#"><i class="fab fa-facebook-f"></i></a>
-				<a href="#"><i class="fab fa-instagram"></i></a>
-				<a href="#"><i class="fab fa-twitter"></i></a>
+			<div class="icons">
+				<a href="#"><i class="fa-sharp fa-solid fa-angles-up"></i></a>
+				<i id="modo" onclick="cambiarModo()" class="fa-solid fa-moon"></i>
 			</div>
+			
 			<div class="slider-navigation">
 				<div class="nav-btn active"></div>
 				<div class="nav-btn"></div>
@@ -73,10 +149,16 @@
 		</section>
 
 
-		<script type="text/javascript" src="/script/slider.js">
-		</script>
+		<script type="text/javascript" src="/script/slider.js"></script>
+		
+		
 		<!-- info cards cambio imagenes -->
 		<section class="tarjetas">
+			<div class="cont_titulo2">
+				<h2>NUESTROS DESTINOS</h2>
+			</div>
+
+			<div class="cont_cards">
 			<div class="card">
 				<div class="face front">
 					<img src="https://i.ibb.co/hDr32x6/Bariloche.jpg" alt="">
@@ -128,7 +210,6 @@
 				</div>
 			</div>
 
-			<section class="tarjetas">
 				<div class="card">
 					<div class="face front">
 						<img src="https://i.ibb.co/8MsqnnG/misiones.jpg" alt="">
@@ -180,7 +261,147 @@
 						</div>
 					</div>
 				</div>
-			</section>
+			</div>
 		</section>
 	</main>
+
+<!-- Nosotros ----------------------------------->
+<div id="nosotros" >
+	<h2 class="nostitulo"> ¿Por qué elegir Dream Travel?</h2>
+	<div class="contenedor-caja">
+		
+		<div class="caja">
+			<i class="fa fa-star" aria-hidden="true"></i>
+			<h3> Experiencia </h3>
+			<p> Somos una empresa que cuenta con más de veinte años de experiencia en el mercado de turismo y el
+				turismo low cost.
+		</div>
+
+		<div class="caja">
+			<i class="fa fa-check-circle" aria-hidden="true"></i>
+			<h3> Ventajas </h3>
+			<p>Todos nuestros viajes están elaborados con altos estándares de calidad. Contamos con
+				hoteles de primer nivel y
+				transportes de modernísimas unidades.</p>
+		</div>
+
+		<div class="caja">
+			<i class="fa-sharp fa-solid fa-wand-magic-sparkles"></i>
+			<h3> Calidad </h3>
+			<p> Nuestros coordinadores y guías matriculados hacen de cada viaje el mejor logrando el
+				bienestar de los pasajeros.
+			<p>La atención personalizada y la calidad en el servicio son nuestros principales
+				valores.</p>
+			</p>
+		</div>
+	</div>
+</div>
+
+
+<div class="contenedor-rectangulo">
+	<!-- <img src="https://images.unsplash.com/photo-1486134030336-39b1094bf33e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1007&q=80"; -->
+   
+	<div class="destinos">
+        <h2  style="font-size:65px"; >+30</h2>
+        <h4>Destinos</h4>
+    </div>
+	
+    <div class="destinos">
+        <h2 style="font-size:65px"; >+5000</h2>
+        <h4>Clientes</h4>
+    </div>
+
+    <div class="destinos">
+        <h2 style="font-size:65px";>+1200</h2>
+        <h4>Viajes realizados</h4>
+    </div>
+</div>
+
+
+<!--------------------------------------------------------------------------------------------------------------->
+<!-- Footer -->
+<footer class="footer">
+	<!-- Desarrolladores --><!----------------------------------------------------------------------------------->
+	<div class="contenedor-desarrollo">
+	
+		<div class="texto-desarrollo">
+			<h2> Team desarrollo </h2>
+		
+				<!-- logos git hub con links personales -->
+		<div class="logos-git">
+			<a href="https://github.com/jpricart/"><img src="https://i.ibb.co/bmTx6tf/2.png" alt="GitHub"title="Juan Pablo Ricart"></a>
+			<a href="https://github.com/Deotratierra"><img src="https://i.ibb.co/bmTx6tf/2.png" alt="GitHub" title="Exequiel Bravo"></a>
+			<a href="https://github.com/prestymdq"> <img src="https://i.ibb.co/bmTx6tf/2.png" alt="GitHub" title="Prestipino Ricardo Ezequiel"></a> 
+			<a href="https://github.com/Gabrielacecily"><img src="https://i.ibb.co/bmTx6tf/2.png" alt="GitHub" title="Grabriela Cecily"></a>
+			<a href="https://github.com/martinjosmac"><img src="https://i.ibb.co/bmTx6tf/2.png" alt="GitHub" title="Martin Jose Machado"></a> 
+			
+		</div>
+			<br>
+			<p> Somos Pablo, Exe, Ezequiel, Gabriela y Martin; juntos formamos un equipo de desarrolladores web nuevos  en el mundo 
+				de la programación. Nuestra meta como equipo es trabajar juntos para desarrollar y crear proyectos innovadores que sean útiles 
+				para los usuarios. Trabajaremos para aprender y aplicar las últimas tecnologías disponibles para mejorar nuestras habilidades de 
+				programación. También nos comprometemos a compartir nuestros conocimientos y habilidades, así como a trabajar en conjunto para 
+				alcanzar nuestras metas.</p>
+				<br>
+			</div>
+
+	<!--------------------------------------------------------------------------------------------------------------->
+	
+	
+	</div>
+	<!--------------------------------------------------------------------------------------------------------------->
+	
+	<div class="mifooter">
+		<div class="col-md-3 logof">
+
+			<img class="logo" src="./imgs/logo Travel.png" alt="logo" >
+			<p >© 2023 Plataforma de viajes para turismo</p>
+			
+		</div>
+						
+		<!-- Footer redes sociales -->
+		<div class=" col-md-4 redes">
+			Seguinos <br>
+			<i class="fa-brands fa-instagram"> </i>
+
+			<i class="fa-brands fa-facebook"> </i>
+			<i class="fa-brands fa-linkedin"> </i>
+
+		</div>
+
+		<!-- Footer concacto -->
+		<div class="col-md-2 cont">
+			<address>
+				Contacto <br>
+				<i class="fa-solid fa-phone"> </i> 1123659595888
+				<br>
+				<i class="fa-solid fa-envelope"> </i> viajesenn@email.com
+				<br>
+				<i class="fa-solid fa-location-dot"> </i> 9 de julio, Nº 3252
+			</address>
+		</div>
+
+		<!-- Footer newsletter -->
+		<div class="col-md-3  newsletter">
+			<h5 class="text-white mb-3">Newsletter</h5>
+			<p class="small text-muted">Dejanos tu correo y te enviamos las novedades.</p>
+			<form action="#">
+				<div class="input-group">
+					<input class="form-control" type="text" placeholder="email" aria-label="email">
+					<button class="btn btn-primary" id="button-addon2" type="button"><i
+							class="fas fa-paper-plane"></i></button>
+				</div>
+			</form>
+		</div>
+	</div>
+		
+	</footer>
+	
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="script/main.js"></script>
+	
 </body>
+
+</html>

@@ -134,7 +134,7 @@ header.sticky .menu-btn.active {
 
 
 header.sticky .navigation-items a {
-  color: #b5179e;
+  color: #480ca8;
 }
 
 header.sticky .navigation-items i {
@@ -152,7 +152,7 @@ header.sticky .navigation .navigation-items i:before {
 /* modal */
 
 /* Estilos para la ventana modal */
- .modal {
+.modal {
   display: none;
   position: fixed;
   z-index: 9999;
@@ -162,8 +162,7 @@ header.sticky .navigation .navigation-items i:before {
   height: 100%;
   overflow: auto;
   background-color: rgba(0,0,0,0.5);
-} 
-
+}
 
 .modal-contenido {
   background-color: #fff;
@@ -673,14 +672,13 @@ header.sticky .navigation .navigation-items i:before {
   height: 45px;
   line-height: 45px;
   color: #fff;
-  /* background: rgba(0, 0, 0, 0.37); */
-  background:#b5179d44;
+  background: rgba(0, 0, 0, 0.4);
   text-align: center;
 }
 
 .card .back {
   transform: perspective(600px) rotateY(180deg);
-  background: #7178df;
+  background: #4895ef;
   padding: 15px;
   color: #f3f3f3;
   display: flex;
@@ -693,7 +691,7 @@ header.sticky .navigation .navigation-items i:before {
 .card .back h3 {
 	padding-top: 0;
 	margin-top: 0;
-  color: #b5179e;
+  color: #480ca8;
 }
 
 .card .back p {
@@ -708,7 +706,7 @@ header.sticky .navigation .navigation-items i:before {
   padding:  5px 19px;
   border-radius: 7px;
   text-decoration: none;
-  background: #b5179e;
+  background: #480ca8;
   color: #fff;
   font-weight: 600;
 }
@@ -842,46 +840,43 @@ header.sticky .navigation .navigation-items i:before {
 }
 /* ----------------------------------------------- */
 
-
-/* Seccion acerca de nosotros */
-
-.nos {
-  position: relative;
-  max-width: 100%;
-}
-
-.nostitulo {
-  margin-bottom: 30px;
-	text-align: center;
-  font-weight: 700;
-}
-
-#nosotros {
+#nosotros{
+ 
+  background-color: rgb(252, 252, 252);
   display: flex;
   flex-direction: column;
+  height: 800px;
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px 0 30px 0;  
+    
   justify-content: space-evenly;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',sans-serif;  
 }
 
-.contenedor-caja {
-	display: flex;
+.nostitulo{
+ margin-bottom: 15px;
+
+text-align: center;
+
+}
+
+.contenedor-caja{
+display: flex;
   flex-direction: row;
   flex-wrap: wrap;/* autoacomodable */
   justify-content: space-evenly;
 }
 
-.caja {
-	background-color: #480ca8;
-	color: #fcf5eb;
-	width: 300px;
-	height: 250px;
-	text-align: center;
-	padding: 20px;
-	border-radius: 10px;
+.caja{
+background-color:#7f00b2;
+color: #fcf5eb;
+width: 25%;
+height: 500px;
+
+text-align: center;
+padding:100px;
+border-radius: 10px;
+font-size: 14px;
+
 }
  /* seccion  nosotros con imagen de fondo */
 .contenedor-rectangulo {
@@ -898,44 +893,92 @@ header.sticky .navigation .navigation-items i:before {
       background-attachment: fixed;/* desplazamiento de iagen de fondo */
 }
 
-/* Footer */
+.destinos {
+     
+background-color: #8000b26c;
+justify-content: space-between;  
+color: #fdfcff;
+width: 75%;
+height: 300px;
+text-align: center;  
+padding: 30px;
+
+}
+
+
+
+/* footer */
 .footer {
   display: flex;
   flex-flow: column wrap;
   color:#ffffff;
-	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',sans-serif;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',sans-serif;
+   
+}
+.mifooter{
+background-color:#15297c;
+height: 236px;
+
+}
+/* Desarrolladores--------------------------------- */
+
+.contenedor-desarrollo{
+ display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+height: 300px;
+width: 100%;
+background:#8000b2;
 }
 
-.mifooter {
-	background-color: #480ca8;
-	height: 236px;
+.texto-desarrollo h2{
+text-align: center;
+font-size: 50px;
+  
 }
-
-.texto-desarrollo {
-  position: relative;
-  background-color: #480ca8;
-  width: 100%;
-  height: 200px;
+.texto-desarrollo{
+text-align: center;
+  width: 50%;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif,sans-serif;
-  align-items: center;
+  font-size:18px;
+  line-height:20px;
+  
+    
 }
 
-.texto-desarrollo h3 {
-  font-size: 2.5em;
-  max-width: 100%;
-  margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
+.logos-git{
+  display: inline-flex;
+justify-content: center;
+ width: 70;
+
 }
 
-.texto-desarrollo p {
-  font-size: 1.2em;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 100%;
+.logos-git img{
+  height: 80px;
+  border-radius: 50%;
+  border: solid 3px rgb(178, 4, 247);
+  transition: 0.8s;
+  margin: 8px;
+  
+  
+  
+
 }
 
-.cont {
+.logos-git img:hover{
+  display: block;
+ /*logos git efectos nuevos */
+  border-radius:50%;
+-webkit-border-radius:50%;
+box-shadow: 0px 0px 15px 15px #07d9f0;
+-webkit-box-shadow: 0px 0px 15px 15px #e00efc;
+transform: rotate(360deg);
+-webkit-transform: rotate(360deg);
+}
+
+/*logo- seguinos---- contacto---------------------------- */
+.cont{
   margin-top: 50px ;
   padding-left:0px;
   align-content: center;
@@ -943,15 +986,15 @@ header.sticky .navigation .navigation-items i:before {
 }
 .cont i{
   margin: 10px 0px;
+   
 }
+.redes{
+ text-align: center; 
+margin-top: 50px;
+font-size: medium;
 
-.redes {
-	text-align: center; 
-	margin-top: 50px;
-	font-size: small;
 }
-
-.redes i {
+.redes i{
   font-size: 250%; 
   margin: 20px 10px;
 
@@ -961,12 +1004,11 @@ header.sticky .navigation .navigation-items i:before {
   margin-top: 50px ;
   margin-left: 0px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif,sans-serif;
+ color: #fcf5eb;
 }
 .input-group{
   display: flex  ;
 
-.input-group {
-  display: flex;
 }
 
 
@@ -986,7 +1028,7 @@ header.sticky .navigation .navigation-items i:before {
 
 /* Estilo para el header en modo oscuro */
 body.modo-oscuro header {
-  background: radial-gradient(circle, #6c007abd, #0a008fbe);
+  background: rgba(49, 0, 95, 0.7);
   backdrop-filter: blur(5px);
 }
 
@@ -999,17 +1041,12 @@ body.modo-oscuro header {
 }
 
 .modo-oscuro .home::before {
-  background: radial-gradient(circle, #0a008f6b, #0000005e);
+  background: rgb(49, 0, 95, 0.2);
 }
 
 .modo-oscuro .home .content a {
-  background-color: #6c007a;
+  background-color: rgba(49, 0, 95);
   color: #ffffff;
-}
-
-.modo-oscuro .home .content a:hover {
-  background-color: #ffffff;
-  color: #6c007a;
 }
 
 .modo-oscuro header.sticky .brand {
@@ -1033,43 +1070,19 @@ body.modo-oscuro header {
 }
 
 .modo-oscuro .slider-navigation .nav-btn.active {
-  background: #0a008f;
+  background: rgba(49, 0, 95);
 }
 
 .modo-oscuro .tarjetas {
-  background: radial-gradient(circle, #0a008f, #000000);
-}
-
-.modo-oscuro .card .front {
-  box-shadow: 0 1px 7px #6c007a;
-  /* outline: 3px solid #0a008f6b; */
-}
-
-.modo-oscuro .card .front h3 {
-  background: radial-gradient(circle, #6c007abd, #0a008fbe);
+  background-color: rgba(49, 0, 95);
 }
 
 .modo-oscuro .card .back {
-  background: #0a008f;
-  box-shadow: 0 1px 7px #6c007a;
+  background: #1a0022;
 }
 
-.modo-oscuro .card .back h3 {
-  color: #ffffff;
-}
-
-.modo-oscuro .card .back a {
-  background-color: #000000;
-  color: #ffffff;
-}
-
-.modo-oscuro .card .back a:hover {
-  background-color: #ffffff;
-  color: #6c007a;
-}
-
-.modo-oscuro #nosotros {
-  background: #050049;
+.modo-oscuro .nos {
+  background: #1a0022;
 }
 
 .modo-oscuro .nostitulo {
@@ -1077,15 +1090,15 @@ body.modo-oscuro header {
 }
 
 .modo-oscuro .caja {
-	background-color: #0a008f;
-  outline: 2px solid #ffffff;
+	background-color: #1b0047;
+  border: 2px solid #fff;
+}
+
+.modo-oscuro .texto-desarrollo {
+  background-color: #1b0047;
 }
 
 .modo-oscuro .mifooter {
-	background-color: #070649;
+	background-color: #1b0047;
 	height: 236px;
-}
-
-.modo-oscuro .contenedor-desarrollo {
-  background: radial-gradient(circle, #000000, #050049);
 }

@@ -134,19 +134,19 @@ header.sticky .menu-btn.active {
 
 
 header.sticky .navigation-items a {
-  color: #480ca8;
+  color: #b5179e;
 }
 
 header.sticky .navigation-items i {
-  color: #480ca8;
+  color: #b5179e;
 }
 
 header.sticky .navigation .navigation-items a:before {
-  background: #480ca8;
+  background: #b5179e;
 }
 
 header.sticky .navigation .navigation-items i:before {
-  background: #480ca8;
+  background: #b5179e;
 }
 
 /* modal */
@@ -278,7 +278,7 @@ header.sticky .navigation .navigation-items i:before {
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
-  background: #0a008f;
+  background: #173196;
   transition: ease-in-out;
 }
 
@@ -510,7 +510,7 @@ header.sticky .navigation .navigation-items i:before {
   }
 
   header .navigation .navigation-items a {
-    color: #222;
+    color: #b5179e;
     font-size: 1.2em;
     margin: 20px;
   }
@@ -672,13 +672,14 @@ header.sticky .navigation .navigation-items i:before {
   height: 45px;
   line-height: 45px;
   color: #fff;
-  background: rgba(0, 0, 0, 0.4);
+   /* background: rgba(0, 0, 0, 0.37); */
+   background:#b5179d44;
   text-align: center;
 }
 
 .card .back {
   transform: perspective(600px) rotateY(180deg);
-  background: #4895ef;
+  background: #7178df;
   padding: 15px;
   color: #f3f3f3;
   display: flex;
@@ -691,7 +692,7 @@ header.sticky .navigation .navigation-items i:before {
 .card .back h3 {
 	padding-top: 0;
 	margin-top: 0;
-  color: #480ca8;
+  color:#b5179e;
 }
 
 .card .back p {
@@ -706,7 +707,8 @@ header.sticky .navigation .navigation-items i:before {
   padding:  5px 19px;
   border-radius: 7px;
   text-decoration: none;
-  background: #480ca8;
+   background: #b5179e;
+
   color: #fff;
   font-weight: 600;
 }
@@ -838,46 +840,49 @@ header.sticky .navigation .navigation-items i:before {
     width: 33.3333%;
   }
 }
-/* ----------------------------------------------- */
+
+
+/* nosotros empresa----------------------------------------------- */
 
 #nosotros{
-  background-color: rgb(252, 252, 252);
+  background-color:#ffffff;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 600px;
   width: 100%;
-  padding-bottom: 40px;
-  padding-left: 130px;
-  padding-right: 130px;
+    
   justify-content: space-evenly;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',sans-serif;  
+  /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',sans-serif;   */
 }
 
-.nostitulo {
- margin-bottom: 30px;
- text-align: center;
+.nostitulo{
+ margin-bottom: 15px;
+
+text-align: center;
+
 }
 
+.caja i{
+  color:#b5179e ;
+  font-size: 19px}
 .contenedor-caja{
-  display: flex;
+display: flex;
   flex-direction: row;
   flex-wrap: wrap;/* autoacomodable */
   justify-content: space-evenly;
 }
 
 .caja{
-  position: relative;
-  margin-top: auto;
-  margin-bottom: auto;
-  background-color:#7f00b2;
-  color: #fcf5eb;
-  width: 25%;
-  height: 320px;
-  text-align: center;
-  padding: 30px 30px;
-  margin: 0;
-  border-radius: 10px;
-  font-size: 14px;
+background-color:#173196;
+color: #fcf5eb;
+width: 300px;
+height: 350px;
+
+text-align: center;
+padding:50px;
+border-radius: 10px;
+font-size: 14px;
+
 }
 
 
@@ -903,7 +908,8 @@ header.sticky .navigation .navigation-items i:before {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  background: radial-gradient(circle, #000000bd, #0a008fbe);
+  /* background: radial-gradient(circle, #000000bd, #b5179d8e); */
+  background: #b5179d8e;
   width: 100%;
   height: 100%;
   padding-top: 40px;
@@ -919,7 +925,7 @@ header.sticky .navigation .navigation-items i:before {
 }
 
 
-/* footer */
+/* footer ------------------------------------*/
 .footer {
   display: flex;
   flex-flow: column wrap;
@@ -934,15 +940,14 @@ header.sticky .navigation .navigation-items i:before {
 /* Desarrolladores--------------------------------- */
 
 .contenedor-desarrollo {
- display: flex;
+  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 200px;
+  height: 400px;
   width: 100%;
-  background:#ffffff;
-  padding: 0 100px
-}
+  background:#7178df;
+  }
 
 .cont-desa {
   width: 40%;
@@ -951,7 +956,7 @@ header.sticky .navigation .navigation-items i:before {
 .texto-desarrollo {
   width: 100%;
   margin-left: 80px ;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif,sans-serif;
+ /*  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif,sans-serif; */
   font-size: 14px;
   line-height: 20px;
   text-align: left;
@@ -1016,6 +1021,12 @@ header.sticky .navigation .navigation-items i:before {
 
 
 /* ----------------------------------------------- */
+
+
+
+
+
+
 
 
 /* Modo Dark/White */

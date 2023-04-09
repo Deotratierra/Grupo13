@@ -81,6 +81,7 @@ body {
 
 /* Estilos para la tasa de cambio 1 */
 .rate1 {
+    display: flex;
     /* Establecemos el color del texto en gris */
     color: grey;
 }

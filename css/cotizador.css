@@ -1,0 +1,120 @@
+#cotizador {
+  background: #b5179e;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#cotizador h2 {
+  padding-bottom: 20px;
+  color: #ffffff;
+}
+
+#cotizador label {
+  color: #ffffff;
+}
+
+.buttons {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.buttons .next-btn,
+.buttons .prev-btn {
+  background: #00ffdd;
+  color: darkslategray;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  padding: 7px;
+}
+
+.buttons #download-pdf {
+  background: #ff0000;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  padding: 7px;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .step {
+    width: 30%;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .step.active {
+    color: #00ffdd;
+  }
+
+  
+  /* Estilos para el formulario */
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .paso:not(:first-child) {
+    display: none;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  input[type="submit"] {
+    background-color: #0066cc;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button.anterior {
+    display: none;
+  }
+
+  #resultado {
+    color: #ffffff;
+  }
+
+  #resultado strong {
+    color: #00ffdd;
+  }
+
+  #resultado h1 {
+    display: none;
+  }

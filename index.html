@@ -8,6 +8,8 @@
 	<meta http-equiv='X-UA-Compatible' content="IE=edge">
 	<!-- Escala de la página según el tamaño del dispositivo del usuario -->
 	<meta name='viewport' content="width=device-width, initial-scale=1.0">
+	<!-- Librería jsPDF -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
 <!-- Enlace al archivo de hoja de estilos de Bootstrap -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -21,6 +23,8 @@
 
 	<!-- Enlace al archivo de hoja de estilos personalizadas -->
 	<link rel='stylesheet' href='css/estilos.css'>
+	<!-- Enlace al css del cotizador -->
+	<link rel="stylesheet" href="css/cotizador.css">
 	<!-- Título de la página -->
 	<title>Proyecto Final</title>
 	<!-- Enlace al icono de la página -->
@@ -170,7 +174,7 @@
 						espectaculares, montañas, lagos y bosques. Explora sus parques nacionales, actividades al aire
 						libre y deliciosa gastronomía. ¡No te pierdas esta experiencia única!</p>
 					<div class="link">
-						<a href="#">Detalles</a>
+						<a href="#cotizador">Cotizar</a>
 					</div>
 				</div>
 			</div>
@@ -187,7 +191,7 @@
 						impresionantes cerros de los Andes. La cultura local, el arte, la gastronomía y la fiesta son
 						otras de las principales atracciones.</p>
 					<div class="link">
-						<a href="#">Detalles</a>
+						<a href="#cotizador">Cotizar</a>
 					</div>
 				</div>
 			</div>
@@ -205,7 +209,7 @@
 						Disfruta de sus montañas, lagos, viñedos y campos de montaña. Explora sus majestuosas cuevas y
 						cascadas. ¡Te encantará!</p>
 					<div class="link">
-						<a href="#">Detalles</a>
+						<a href="#cotizador">Cotizar</a>
 					</div>
 				</div>
 			</div>
@@ -222,7 +226,7 @@
 							amantes de la naturaleza hay muchas actividades al aire libre como senderismo, rafting,
 							cabalgatas y pesca. Venga y disfrute de sus encantos.</p>
 						<div class="link">
-							<a href="#">Detalles</a>
+							<a href="#cotizador">Cotizar</a>
 						</div>
 					</div>
 				</div>
@@ -239,7 +243,7 @@
 							los Andes, los lagos y glaciares de la Patagonia, los valles y bosques húmedos del norte, y
 							los bosques secos del sur. </p>
 						<div class="link">
-							<a href="#">Detalles</a>
+							<a href="#cotizador">Cotizar</a>
 						</div>
 					</div>
 				</div>
@@ -257,12 +261,88 @@
 							gastronomía variada. Visite la Quebrada de Humahuaca, disfrute de la música folklórica local
 							y pruebe la comida típica de la región.</p>
 						<div class="link">
-							<a href="#">Detalles</a>
+							<a href="#cotizador">Cotizar</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
+
+		<!-- Cotizador -->
+		<div id="cotizador">
+			<h2>Personalizá tu paquete:</h2>
+		
+			<form>
+				<div id="step-1" class="paso">
+					<label for="nombre">Nombre:</label>
+					<input type="text" id="nombre" name="nombre" value="Escriba su nombre aquí" onfocus="borrarTexto(this)" onblur="restaurarTexto(this)">
+		
+					<label for="apellido">Apellido:</label>
+					<input type="text" id="apellido" name="apellido" value="Escriba su apellido aquí" onfocus="borrarTexto(this)" onblur="restaurarTexto(this)">
+		
+					<div class="buttons">
+						<button type="button" class="next-btn">Siguiente</button>
+					</div>
+				</div>
+		
+				<div id="step-2" class="paso">
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" value="Ingrese su Email aquí" onfocus="borrarTexto(this)" onblur="restaurarTexto(this)">
+		
+					<label for="telefono">Teléfono:</label>
+					<input type="tel" id="telefono" name="telefono" value="Ingrese su teléfono aquí" onfocus="borrarTexto(this)" onblur="restaurarTexto(this)">
+		
+					<div class="buttons">
+						<button type="button" class="prev-btn">Anterior</button>
+						<button type="button" class="next-btn">Siguiente</button>
+					</div>
+				</div>
+		
+				<div id="step-3" class="paso">
+					<label for="paquete">Paquete:</label>
+					<select id="paquete" name="paquete">
+						<option value="">-- Seleccione un paquete --</option>
+						<option value="Bariloche">Bariloche</option>
+						<option value="Salta">Salta</option>
+						<option value="Mendoza">Mendoza</option>
+						<option value="Misiones">Misiones</option>
+						<option value="Santa Cruz">Santa Cruz</option>
+						<option value="Jujuy">Jujuy</option>
+					</select>
+		
+					<label for="personas">Cantidad de personas:</label>
+					<input type="number" id="personas" name="personas" min="1">
+		
+					<label for="fechaDesde">Fecha de salida:</label>
+					<input type="date" id="fechaDesde" name="fechaDesde">
+		
+					<label for="fechaHasta">Fecha de regreso:</label>
+					<input type="date" id="fechaHasta" name="fechaHasta">
+		
+					<div class="buttons">
+						<button type="button" class="prev-btn">Anterior</button>
+						<button type="button" class="next-btn">Siguiente</button>
+					</div>
+				</div>
+		
+				<div id="step-4" class="paso">
+					<div id="resultado"></div>
+		
+					<div class="buttons">
+						<button type="button" class="prev-btn">Anterior</button>
+						<button id="download-pdf">Descargar en PDF</button>
+					</div>
+				</div>
+		
+				<div class="steps">
+					<div class="step active" data-step="1">1. Datos personales.</div>
+					<div class="step" data-step="2">2. Datos de contacto.</div>
+					<div class="step" data-step="3">3. Personalizar paquete.</div>
+					<div class="step" data-step="4">4. Presupuesto.</div>
+				</div>
+		
+			</form>
+		</div>
 	</main>
 
 <!-- Nosotros ----------------------------------->
@@ -398,6 +478,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="script/main.js"></script>
+	<script src="script/cotizador.js"></script>
 </body>
 
 </html>

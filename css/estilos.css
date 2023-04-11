@@ -946,7 +946,7 @@ font-size: 14px;
   align-items: center;
   height: 400px;
   width: 100%;
-  background:#7178df;
+  background: linear-gradient(to bottom, #b332c7, #7178df); 
   }
 
 
@@ -1048,7 +1048,7 @@ font-size: 14px;
 }
 
 .card .links a:nth-child(2):hover {
-  color: #1C93E4;
+color:darkmagenta
 }
 
 .card .links a:nth-child(3):hover {

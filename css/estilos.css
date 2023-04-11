@@ -949,35 +949,116 @@ font-size: 14px;
   background:#7178df;
   }
 
-.cont-desa {
-  width: 40%;
+
+/*---- EQUIPO----*/
+
+.card {
+  position: relative;
+  width: 250px;
+  height: 350px;
+  border-radius: 10px;
+  box-shadow: 2px 3px 5px rgba(73, 69, 52, 0.4);
+  margin: 40px;
+  
 }
 
-.texto-desarrollo {
+.card .content {
+  position: relative;
+  z-index: 100;
   width: 100%;
-  margin-left: 80px ;
- /*  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif,sans-serif; */
-  font-size: 14px;
-  line-height: 20px;
-  text-align: left;
-}
-
-.logos-git {
+  height: 100%;
+  border-radius: 10px;
   display: flex;
-  justify-content: space-evenly;
-  width: 40%;
+  flex-direction: column;
+  overflow: hidden;  
+  text-align: center;  
+  padding: 20px;
+  background: #fff;
 }
 
-.logos-git img {
-  height: 60px;
+.card .content .img {
+  height: 50%;
+  margin-bottom: 20px;
+}
+.card .content .img img {
+  position: relative;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
-  border: solid 2px gray;
-  transition: 0.5s;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
-.logos-git img:hover {
-  transform: scale(1.5);/*logos git efectos*/
+.card .content span {
+  position: absolute;
+  width: 350px;
+  height: 150px;
+  background: linear-gradient(to right, #5e2066, #b332c7);
+  transform: rotate(-35deg);
+  top: -50px;
+  left: -100px;
 }
+
+.card .content h4 {
+  font-size: 18px;
+  color: #1a1919;
+  margin-bottom: 5px;
+}
+
+.card .content h6 {
+  font-size: 13px;
+  color: #5e2066;
+}
+
+.card .content p {
+  font-size: 12px;
+  color: #1a161f;
+  
+}
+
+.card .links {
+  position: absolute;
+  z-index: 90;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 2px 3px 5px rgba(73, 69, 52, 0.4);
+  padding: 20px;
+  align-items: center;
+  right: 10px;
+  top: 15px;
+  transition: .5s;
+}
+
+.card:hover .links {
+  right: -50px;
+  border-radius: 0 10px 10px 0;
+}
+
+
+.card .links a {
+  font-size: 20px;
+  color: #646069;
+}
+
+.card .links a:nth-child(1):hover {
+  color: #0158ca;
+}
+
+.card .links a:nth-child(2):hover {
+  color: #1C93E4;
+}
+
+.card .links a:nth-child(3):hover {
+  color: #5D277D;
+}
+
+.card .links a:nth-child(4):hover {
+  color: #FE0000;
+}
+/*---- FIN EQUIPO----*/
 
 /*logo- seguinos---- contacto---------------------------- */
 .cont {

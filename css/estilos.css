@@ -936,7 +936,7 @@ font-size: 14px;
   color: #f5f4f4;
   display: flex;
   flex-direction:column;
-  background: linear-gradient(to bottom, #b332c7, #7178df 40%) ; 
+  background: linear-gradient(to bottom, #b332c7, #7178df 50%) ; 
   height: 500px;
    width: 100%;
    justify-content: center;

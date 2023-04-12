@@ -1,14 +1,33 @@
 #cotizador {
-  background: #b5179e;
+  /* background-image: url('https://images.pexels.com/photos/8532285/pexels-photo-8532285.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
   padding-top: 40px;
   padding-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
+}
+
+#cotizador .v_cot_2 {
+  display: none;
+}
+
+#cotizador video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
 }
 
 #cotizador h2 {
@@ -20,6 +39,12 @@
   color: #ffffff;
 }
 
+#cotizador .cont_cot {
+  background: #06005a91;
+  padding: 20px;
+  border-radius: 20px;
+}
+
 .buttons {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -28,11 +53,18 @@
 .buttons .next-btn,
 .buttons .prev-btn {
   background: #00ffdd;
-  color: darkslategray;
+  color: rgb(0, 0, 0);
   font-weight: bold;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 7px;
+  margin-right: 5px;
+}
+
+.buttons .next-btn:hover,
+.buttons .prev-btn:hover {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
 }
 
 .buttons #download-pdf {
@@ -40,14 +72,20 @@
   color: rgb(255, 255, 255);
   font-weight: bold;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 7px;
+}
+
+.buttons #download-pdf:hover {
+  background: #ffffff;
+  color: rgb(255, 0, 0);
 }
 
 .steps {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 30px;
     margin-bottom: 30px;
   }
   
@@ -75,10 +113,33 @@
   }
   
   label {
+    width: 100%;
+    padding-left: 5px;
+    text-align: start;
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     font-size: 16px;
     font-weight: bold;
+  }
+
+  #cantP,
+  #desde,
+  #hasta {
+    text-align: center;
+  }
+
+  #fechaDesde,
+  #fechaHasta {
+    margin-bottom: 10px;
+  }
+
+  #personas {
+    width: 50px;
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 3px;
   }
   
   input[type="text"],
@@ -88,7 +149,9 @@
     width: 100%;
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 2px solid #00ffdd;
+    background-color: blueviolet;
+    color:#ffffff;
     font-size: 16px;
     margin-bottom: 20px;
   }
@@ -118,3 +181,36 @@
   #resultado h1 {
     display: none;
   }
+
+  /* Modo Oscuro del COtizador */
+
+  .modo-oscuro #cotizador .v_cot_1 {
+    display: none;
+  }
+
+  .modo-oscuro #cotizador .v_cot_2 {
+    display: block;
+  }
+
+  .modo-oscuro #cotizador .cont_cot {
+    background: #00000091;
+  }
+
+ .modo-oscuro input[type="text"],
+ .modo-oscuro input[type="email"],
+ .modo-oscuro input[type="tel"],
+ .modo-oscuro select {
+  border: 2px solid #ff00ea;
+  background-color: rgb(28, 0, 131);
+  color:#ffffff;
+ }
+
+.modo-oscuro .buttons .next-btn,
+.modo-oscuro .buttons .prev-btn {
+  background: #4b006e;
+  color: rgb(255, 255, 255);
+}
+
+.modo-oscuro .step.active {
+  color: #ff00ea;
+}

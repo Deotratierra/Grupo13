@@ -31,7 +31,7 @@
 
 <body>
 	<header>
-		<a href="#" class="brand">Travel</a>
+		<a href="#" class="brand">DREAM<span>TRAVEL</span></a>
 		<div class="menu-btn"></div>
 		<div class="navigation">
 			<div class="navigation-items">
@@ -268,6 +268,9 @@
 
 		<!-- Cotizador -->
 		<div id="cotizador">
+			<video class=v_cot_1 src="vids/v_cot_1.mp4" autoplay loop muted></video>
+			<video class=v_cot_2 src="vids/v_cot_2.mp4" autoplay loop muted></video>
+			<div class="cont_cot">
 			<h2>Personalizá tu paquete:</h2>
 		
 			<form>
@@ -308,13 +311,13 @@
 						<option value="Jujuy">Jujuy</option>
 					</select>
 		
-					<label for="personas">Cantidad de personas:</label>
+					<label id="cantP" for="personas">Cantidad de personas:</label>
 					<input type="number" id="personas" name="personas" min="1">
 		
-					<label for="fechaDesde">Fecha de salida:</label>
+					<label id="desde" for="fechaDesde">Fecha de salida:</label>
 					<input type="date" id="fechaDesde" name="fechaDesde">
 		
-					<label for="fechaHasta">Fecha de regreso:</label>
+					<label id="hasta" for="fechaHasta">Fecha de regreso:</label>
 					<input type="date" id="fechaHasta" name="fechaHasta">
 		
 					<div class="buttons">
@@ -333,13 +336,14 @@
 				</div>
 		
 				<div class="steps">
-					<div class="step active" data-step="1">1. Datos personales.</div>
-					<div class="step" data-step="2">2. Datos de contacto.</div>
-					<div class="step" data-step="3">3. Personalizar paquete.</div>
-					<div class="step" data-step="4">4. Presupuesto.</div>
+					<div class="step active" data-step="1">1. Datos personales</div>
+					<div class="step" data-step="2">2. Datos de contacto</div>
+					<div class="step" data-step="3">3. Personalizar paquete</div>
+					<div class="step" data-step="4">4. Presupuesto</div>
 				</div>
 		
 			</form>
+		</div>
 		</div>
 	</main>
 

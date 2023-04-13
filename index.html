@@ -555,7 +555,7 @@
 				<!-- Footer newsletter -->
 				<!-- Modal -->
 				<div class="col-md-3 newsletter">
-					<h5 class="text-white mb-3">Cambio Divisas</h5>
+					<h5 class="text-white mb-3">Cambio de Divisas</h5>
 					<p class="small text-muted">Unlock global possibilities with our seamless currency exchange
 						services.</p>
 					<!-- Botón para abrir el popup -->
@@ -565,10 +565,15 @@
 						<button id="closePopup">Cerrar</button>
 					</div>
 					<script>
-						// Función para abrir el popup, me resulto la opcion mas rapida y facil paro modificar el css
+						// Función para abrir el popup, me resulto la opcion mas rapida y facil para no modificar el css
 						function openPopup() {
+							// Seleccionar el elemento HTML con la clase '.newsletter'
 							var div = document.querySelector('.newsletter');
+
+							// Obtener el ancho del elemento seleccionado
 							var width = div.offsetWidth;
+
+							// Obtener la altura del elemento seleccionado
 							var height = div.offsetHeight;
 							var width = window.innerWidth * 0.6; // Ancho del popup como el 60% del ancho de la ventana principal
 							var height = window.innerHeight * 0.4; // Alto del popup como el 40% del alto de la ventana principal

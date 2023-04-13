@@ -51,7 +51,8 @@
 }
 
 .buttons .next-btn,
-.buttons .prev-btn {
+.buttons .prev-btn,
+.btn-lg {
   background: #00ffdd;
   color: rgb(0, 0, 0);
   font-weight: bold;
@@ -59,6 +60,10 @@
   border-radius: 5px;
   padding: 7px;
   margin-right: 5px;
+}
+
+.btn-lg {
+  float: right;
 }
 
 .buttons .next-btn:hover,
@@ -145,6 +150,7 @@
   input[type="text"],
   input[type="email"],
   input[type="tel"],
+  #message,
   select {
     width: 100%;
     padding: 10px;
@@ -199,6 +205,7 @@
  .modo-oscuro input[type="text"],
  .modo-oscuro input[type="email"],
  .modo-oscuro input[type="tel"],
+ .modo-oscuro #message,
  .modo-oscuro select {
   border: 2px solid #ff00ea;
   background-color: rgb(28, 0, 131);
@@ -206,7 +213,8 @@
  }
 
 .modo-oscuro .buttons .next-btn,
-.modo-oscuro .buttons .prev-btn {
+.modo-oscuro .buttons .prev-btn,
+.modo-oscuro .btn-lg {
   background: #4b006e;
   color: rgb(255, 255, 255);
 }

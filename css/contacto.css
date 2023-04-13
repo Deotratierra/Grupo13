@@ -1,0 +1,48 @@
+.py-4 {
+  width: 100%;
+}
+
+/* Estilos para la ventana modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  max-width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-contenido {
+  background-image: url('https://images.unsplash.com/photo-1638271263463-61d5b0ad40bf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5% auto;
+  padding: 0 20px 20px 20px;
+  border: 1px solid #888;
+  max-width: 400px;
+}
+
+.bCerrar {
+  width: 100%;
+  height: 30px;
+  padding: 8px 15px 15px 0;
+}
+
+.cerrar {
+  color: #cc0088;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  top: 0;
+  right: 0;
+}
+
+.cerrar:hover,
+.cerrar:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

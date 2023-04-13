@@ -1,0 +1,208 @@
+/* Importamos la fuente Yantramanav desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav&display=swap');
+
+/* Estilos para el cuerpo de la página*/
+
+body {
+
+    /* Hacemos que el cuerpo ocupe toda la altura visible de la ventana y se centre horizontal y verticalmente */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Agregamos un fondo gradiente utilizando los colores #b8307c y #4a3f6d */
+    background-image: linear-gradient(to bottom, #b8307c, #4a3f6d);
+    /*Ocultamos cualquier desbordamiento del cuerpo para evitar scrollbars */
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: auto;
+    height: 100vh;
+
+}
+
+/* Estilos para el contenedor */
+.container {
+    position: absolute;
+    /*Establecemos el color de fondo en blanco */
+    background-color: #fff;
+    /* Establecemos el ancho del contenedor en 470 píxeles */
+    width: auto;
+    /* Establecemos la altura del contenedor en 360 píxeles */
+    height: auto;
+    /* Establecemos un relleno de 70 píxeles en todos los lados del contenedor */
+    padding: 20px;
+    /* Agregamos una sombra al contenedor con un desenfoque de 50 píxeles y un color de sombra transparente */
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+    /* Agregamos un radio de borde de 5 píxeles al contenedor para darle esquinas redondeadas */
+    border-radius: 5px;
+    /* Establecemos la fuente Yantramanav como fuente principal del contenedor */
+    font-family: "Yantramanav",
+        sans-serif;
+}
+
+
+
+/*------------------------------------------------------------------------------------------------------//
+/   La medida rem en CSS significa "root em" y se refiere al tamaño de la fuente                        //
+/   de la etiqueta html o raíz. Un rem es igual al tamaño de la fuente de la etiqueta                   //
+/   html,por lo que es una medida relativa. Esto significa que si se establece el tamaño                //
+/   de fuente de la etiqueta html en 16 píxeles,                                                        //
+/   1rem será igual a 16 píxeles. Si se cambia el tamaño de fuente                                      //
+/   de la etiqueta html,                                                                                //
+/   todos los valores rem en el documento se ajustarán automáticamente.                                 //
+/   La medida rem es útil para crear diseños escalables y sensibles al tamaño de fuente,                //
+/   especialmente en dispositivos móviles donde los usuarios pueden cambiar el tamaño                   //
+/   de fuente predeterminado en su navegador.                                                           //
+/*------------------------------------------------------------------------------------------------------//
+
+
+/* Estilos para el título */
+.heading {
+    /* Establecemos el color del texto en #46506c */
+    color: #46506c;
+    /* Centramos el texto en el centro del elemento padre */
+    text-align: center;
+    /* Convertimos todo el texto en mayúsculas */
+    text-transform: uppercase;
+    /* Establecemos el tamaño de fuente en 2.8rem */
+    font-size: 2.8rem;
+}
+
+
+.main {
+    display: flex;
+    /* Mostramos el contenedor como flex */
+    flex-direction: row;
+    /* Establecemos la dirección del flujo de elementos en el contenedor a horizontal (de izquierda a derecha) */
+    justify-content: space-between;
+    /* Alineamos los elementos del contenedor en los extremos opuestos de la dirección de flujo */
+    /*margin-top: 2rem;
+    /* Agregamos un margen superior al contenedor */
+    padding-left: 20px;
+    /*espacio entre conversor de moneda e input*/
+}
+
+/* Estilos para el botón de cambio */
+.swap {
+    align-self: flex-end;
+    /* Alineamos el botón en el extremo inferior del contenedor principal */
+    padding: 5px;
+    /* Agregamos un padding al botón */
+    cursor: pointer;
+    /* Cambiamos el cursor a "manita" para indicar que el botón es clickeable */
+}
+
+/* Estilos para las opciones */
+.options select {
+    padding: 2%;
+    /* Agregamos un padding al contenedor de opciones */
+    width: 75px;
+    /* Establecemos un ancho fijo para el contenedor de opciones */
+}
+
+/* Estilos para el input */
+
+.input input {
+
+    all: unset;
+    /* Eliminamos los estilos por defecto del input */
+    display: inline-block;
+    /* Hacemos que el input se muestre como bloque en línea */
+    margin-top: 1rem;
+    /* Agregamos un margen superior al input */
+    width: 100px;
+    /* Establecemos un ancho fijo para el input */
+    height: 48px;
+    /* Establecemos una altura fija para el input */
+    padding: 5px;
+    /* Agregamos un padding al input */
+    background-color: #b4b1b3;
+    /* Establecemos un color de fondo para el input */
+    color: #0a0a0a;
+    /* Establecemos un color de texto para el input */
+    font-size: 1.5rem;
+    /* Establecemos un tamaño de fuente para el input */
+    border: none;
+    /* Eliminamos el borde del input */
+    box-sizing: border-box;
+    /* Incluimos el borde en el ancho y alto total del input */
+    border-radius: 5px;
+    /* Agregamos un borde redondeado al input */
+    font-weight: 500;
+    /* Establecemos un grosor de fuente para el input */
+    appearance: texflied;
+    /* Cambiamos el estilo del input a "textfield" */
+}
+
+/* Estilos para el target */
+.target {
+    transform: translateX(-5%);
+    /* Movemos el target hacia la izquierda en un 5% de su tamaño */
+}
+
+/* Estilos para el resultado */
+.result {
+
+    margin-top: 2.5rem;
+    /* Agregamos un margen superior al resultado */
+    width: 100%;
+    /* Establecemos un ancho del 100% para el resultado */
+    height: auto;
+    /* Establecemos una altura fija para el resultado */
+    text-align: center;
+    /* Alineamos el texto del resultado en el centro */
+    color: #00ff0d;
+    /* Establecemos un color de texto para el resultado */
+    background: color #290af3;
+    /* Establecemos un color de fondo para el resultado */
+    outline: none;
+    /* Eliminamos el outline del resultado */
+    border: none;
+    /* Eliminamos el borde del resultado */
+    border-radius: 5px;
+    /* Establece el radio de los bordes del elemento */
+}
+
+/* El siguiente bloque de código establece los estilos para un botón en estado normal */
+button {
+    background-color: blue;
+    /* Establece el color de fondo del botón a azul */
+    color: white;
+    /* Establece el color del texto del botón a blanco */
+    padding: 10px;
+    /* Establece el relleno interno del botón */
+    border: none;
+    /* Elimina el borde del botón */
+}
+
+/* El siguiente bloque de código establece los estilos para un botón cuando el cursor se posiciona sobre él */
+button:hover {
+    background-color: rgb(93, 55, 230);
+    /* Establece el color de fondo del boton  */
+}
+
+
+
+
+
+/*/----------------------------------------------------------------------------------------------//
+//  El selector .result:active se utiliza para seleccionar un elemento con la clase             //
+//.result cuando está en estado activo, es decir, cuando se está haciendo clic                  //
+//o tocando el elemento.Este selector se puede utilizar para aplicar estilos diferentes         //
+//al elemento cuando se encuentra en estado activo, lo que puede ser útil para proporcionar     //
+//retroalimentación visual al usuario y mejorar la experiencia de usuario. Por ejemplo, se      //
+//podría cambiar el color de fondo o el borde del elemento cuando se hace clic o se toca para   //
+//indicar que se ha seleccionado.                                                               //
+//----------------------------------------------------------------------------------------------/*/
+
+
+
+.result:active {
+    background-color: #46406c;
+
+}

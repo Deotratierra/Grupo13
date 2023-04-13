@@ -166,7 +166,7 @@ header.sticky .navigation .navigation-items i:before {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .modal-contenido {
@@ -291,7 +291,7 @@ header.sticky .navigation .navigation-items i:before {
   z-index: 777;
   content: "";
   position: absolute;
-  
+
   width: 100%;
   height: 100%;
   top: 0;
@@ -343,8 +343,8 @@ header.sticky .navigation .navigation-items i:before {
 .home .content a:hover {
   background: #fff;
   color: #b5179e;
-  }
-  
+}
+
 .home .icons {
   z-index: 888;
   position: fixed;
@@ -536,7 +536,7 @@ header.sticky .navigation .navigation-items i:before {
     height: 5px;
   }
 
-  header .navigation.active .navigation-items{
+  header .navigation.active .navigation-items {
     background: #fff;
     width: 600px;
     max-width: 600px;
@@ -582,10 +582,10 @@ header.sticky .navigation .navigation-items i:before {
     letter-spacing: 3px;
     line-height: 45px;
     margin-bottom: 20px;
-  }  
+  }
 
   .home .content h2 span {
-      font-size: 40px;
+    font-size: 40px;
   }
 
   .home .content a {
@@ -615,29 +615,29 @@ header.sticky .navigation .navigation-items i:before {
 /* Revisar h2 de tarjetas */
 
 .cont_titulo2 {
-	display: none;
+  display: none;
 }
 
 .cont_titulo2 {
-	width: 100%;
-	text-align: center;
+  width: 100%;
+  text-align: center;
 }
 
 .cont_titulo2 h2 {
-	font-size: 35px;
-	font-weight: 600;
-	color: rgb(0, 15, 37);
+  font-size: 35px;
+  font-weight: 600;
+  color: rgb(0, 15, 37);
 }
 
 .cont_cards {
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-    width: 1000px;
-    padding: 15px 0 15px 0;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+  padding: 15px 0 15px 0;
 }
 
 .card {
@@ -673,13 +673,13 @@ header.sticky .navigation .navigation-items i:before {
 .card .front h3 {
   position: absolute;
   bottom: 0;
-	margin-bottom: 0;
+  margin-bottom: 0;
   width: 100%;
   height: 45px;
   line-height: 45px;
   color: #fff;
-   /* background: rgba(0, 0, 0, 0.37); */
-   background:#b5179d44;
+  /* background: rgba(0, 0, 0, 0.37); */
+  background: #b5179d44;
   text-align: center;
 }
 
@@ -696,9 +696,9 @@ header.sticky .navigation .navigation-items i:before {
 }
 
 .card .back h3 {
-	padding-top: 0;
-	margin-top: 0;
-  color:#b5179e;
+  padding-top: 0;
+  margin-top: 0;
+  color: #b5179e;
 }
 
 .card .back p {
@@ -707,13 +707,13 @@ header.sticky .navigation .navigation-items i:before {
   margin-top: 5px;
   vertical-align: top;
   height: 100%;
-} 
+}
 
 .card .back a {
-  padding:  5px 19px;
+  padding: 5px 19px;
   border-radius: 7px;
   text-decoration: none;
-   background: #b5179e;
+  background: #b5179e;
 
   color: #fff;
   font-weight: 600;
@@ -737,22 +737,22 @@ header.sticky .navigation .navigation-items i:before {
 
 @media (max-width: 1000px) {
   .card {
-  	width: 250px;
-  	height: 300px;
+    width: 250px;
+    height: 300px;
   }
 
-.card h3 {
-  font-size: 14px;
-}
+  .card h3 {
+    font-size: 14px;
+  }
 
-.card .back p {
-  font-size: 12.5px;
-}
+  .card .back p {
+    font-size: 12.5px;
+  }
 
-.card .back a {
-  font-size: 14px;
-  padding:  4px 17px;
-}
+  .card .back a {
+    font-size: 14px;
+    padding: 4px 17px;
+  }
 }
 
 @media (max-width: 840px) {
@@ -764,14 +764,14 @@ header.sticky .navigation .navigation-items i:before {
   .card h3 {
     font-size: 13px;
   }
-  
+
   .card .back p {
     font-size: 9.5px;
   }
 
   .card .back a {
     font-size: 13px;
-    padding:  3px 15px;
+    padding: 3px 15px;
   }
 }
 
@@ -784,14 +784,14 @@ header.sticky .navigation .navigation-items i:before {
   .card h3 {
     font-size: 14px;
   }
-  
+
   .card .back p {
     font-size: 12.5px;
   }
 
   .card .back a {
     font-size: 14px;
-    padding:  4px 17px;
+    padding: 4px 17px;
   }
 }
 
@@ -804,14 +804,14 @@ header.sticky .navigation .navigation-items i:before {
   .card h3 {
     font-size: 13px;
   }
-  
+
   .card .back p {
     font-size: 9.5px;
   }
 
   .card .back a {
     font-size: 13px;
-    padding:  3px 15px;
+    padding: 3px 15px;
   }
 }
 
@@ -824,14 +824,14 @@ header.sticky .navigation .navigation-items i:before {
   .card h3 {
     font-size: 16px;
   }
-  
+
   .card .back p {
     font-size: 15px;
   }
 
   .card .back a {
     font-size: 16px;
-    padding:  5px 19px;
+    padding: 5px 19px;
   }
 }
 
@@ -840,7 +840,7 @@ header.sticky .navigation .navigation-items i:before {
     width: 50%;
   }
 }
-    
+
 @media (min-width: 56rem) {
   .cards_item {
     width: 33.3333%;
@@ -850,49 +850,52 @@ header.sticky .navigation .navigation-items i:before {
 
 /* nosotros empresa----------------------------------------------- */
 
-#nosotros{
+#nosotros {
   background-image: radial-gradient(circle, #051eff, #00aeff);
   display: flex;
   flex-direction: column;
   height: 100%;
-  width: 100%;  
+  width: 100%;
   justify-content: space-evenly;
   padding-top: 20px;
   padding-bottom: 40px;
   /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',sans-serif;   */
 }
 
-.nostitulo{
+.nostitulo {
   color: #fff;
-margin-bottom: 40px;
-text-align: center;
+  margin-bottom: 40px;
+  text-align: center;
 }
 
-.caja i{
-  color:#b5179e ;
-  font-size: 19px}
-.contenedor-caja{
-display: flex;
+.caja i {
+  color: #b5179e;
+  font-size: 19px
+}
+
+.contenedor-caja {
+  display: flex;
   flex-direction: row;
-  flex-wrap: wrap;/* autoacomodable */
+  flex-wrap: wrap;
+  /* autoacomodable */
   justify-content: space-evenly;
 }
 
-.caja{
-background-color:#173196;
-color: #fcf5eb;
-width: 300px;
-height: 350px;
+.caja {
+  background-color: #173196;
+  color: #fcf5eb;
+  width: 300px;
+  height: 350px;
 
-text-align: center;
-padding:50px;
-border-radius: 10px;
-font-size: 14px;
+  text-align: center;
+  padding: 50px;
+  border-radius: 10px;
+  font-size: 14px;
 
 }
 
 
- /* seccion  nosotros con imagen de fondo */
+/* seccion  nosotros con imagen de fondo */
 
 .contenedor-rectangulo {
   display: flex;
@@ -906,7 +909,8 @@ font-size: 14px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;/* desplazamiento de iagen de fondo */
+  background-attachment: fixed;
+  /* desplazamiento de iagen de fondo */
 }
 
 .cont-dest {
@@ -921,10 +925,11 @@ font-size: 14px;
   padding-top: 40px;
   padding-bottom: 40px;
 }
-.destinos {     
-  justify-content: space-between;  
+
+.destinos {
+  justify-content: space-between;
   color: #fdfcff;
-  text-align: center;  
+  text-align: center;
   margin: 30px;
   width: 300px;
   height: 100%;
@@ -932,26 +937,27 @@ font-size: 14px;
 
 
 /* Equipo--------------------------------- */
-.cotenedor-mayor{
+.cotenedor-mayor {
   color: #f5f4f4;
   display: flex;
-  flex-direction:column;
-  background: linear-gradient(to bottom, #b332c7, #7178df 50%) ; 
+  flex-direction: column;
+  background: linear-gradient(to bottom, #b332c7, #7178df 50%);
   height: 500px;
-   width: 100%;
-   justify-content: center;
- align-items: center;
- 
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
 }
+
 .contenedor-desarrollo {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
- 
-  }
 
- 
+}
+
+
 /*---- EQUIPO CARDS----*/
 
 .carde {
@@ -971,8 +977,8 @@ font-size: 14px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  overflow: hidden;  
-  text-align: center;  
+  overflow: hidden;
+  text-align: center;
   padding: 20px;
   background: #fff;
 }
@@ -981,6 +987,7 @@ font-size: 14px;
   height: 50%;
   margin-bottom: 20px;
 }
+
 .carde .contente .img img {
   position: relative;
   width: 130px;
@@ -1014,7 +1021,7 @@ font-size: 14px;
 .carde .contente p {
   font-size: 9px;
   color: #1a161f;
-  
+
 }
 
 .carde .links {
@@ -1049,7 +1056,7 @@ font-size: 14px;
 }
 
 .carde .links a:nth-child(2):hover {
-color:darkmagenta
+  color: darkmagenta
 }
 
 .carde .links a:nth-child(3):hover {
@@ -1059,6 +1066,7 @@ color:darkmagenta
 .carde .links a:nth-child(4):hover {
   color: #FE0000;
 }
+
 /*---- FIN EQUIPO----*/
 
 
@@ -1068,12 +1076,13 @@ color:darkmagenta
 .footer {
   display: flex;
   flex-flow: column wrap;
-  color:#ffffff;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',sans-serif;
-   
+  color: #ffffff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
 }
+
 .mifooter {
-  background-color:#15297c;
+  background-color: #15297c;
   height: 236px;
 }
 
@@ -1083,8 +1092,8 @@ color:darkmagenta
 
 /*logo- seguinos---- contacto---------------------------- */
 .cont {
-  margin-top: 50px ;
-  padding-left:0px;
+  margin-top: 50px;
+  padding-left: 0px;
   align-content: center;
   font-size: small;
 }
@@ -1094,24 +1103,25 @@ color:darkmagenta
 }
 
 .redes {
- text-align: center; 
+  text-align: center;
   margin-top: 50px;
   font-size: medium;
 }
+
 .redes i {
-  font-size: 250%; 
+  font-size: 250%;
   margin: 20px 10px;
 }
 
 .newsletter {
-  margin-top: 50px ;
+  margin-top: 50px;
   margin-left: 0px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif,sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
   color: #fcf5eb;
 }
 
 .input-group {
-  display: flex  ;
+  display: flex;
 }
 
 .logo {
@@ -1226,17 +1236,17 @@ body.modo-oscuro header {
 }
 
 .modo-oscuro .caja {
-	background-color: #0a008f;
+  background-color: #0a008f;
   outline: 2px solid #ffffff;
 }
 
 .modo-oscuro .mifooter {
-	background-color: #070649;
-	height: 236px;
+  background-color: #070649;
+  height: 236px;
 }
 
 .modo-oscuro .cotenedor-mayor {
- background: radial-gradient(circle, #000000, #050049);
+  background: radial-gradient(circle, #000000, #050049);
 }
 
 .modo-oscuro .contenedor-rectangulo {
@@ -1246,4 +1256,22 @@ body.modo-oscuro header {
 .modo-oscuro .cont-dest {
   background-color: #0500492f;
   background-size: contain;
+}
+
+.popup-container {
+  width: 500px;
+  /* Ajusta el ancho del popup a tu preferencia */
+  height: 300px;
+  /* Ajusta el alto del popup a tu preferencia */
+  background-color: #fff;
+  /* Establece el color de fondo del popup */
+  border-radius: 5px;
+  /* Agrega bordes redondeados al popup */
+  padding: 20px;
+  /* Agrega espacio de relleno dentro del popup */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  /* Agrega una sombra alrededor del popup */
+  display: none;
+  /* Oculta el popup inicialmente */
+  /* Agrega otras propiedades de estilo según tus necesidades */
 }

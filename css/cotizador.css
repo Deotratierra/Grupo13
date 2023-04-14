@@ -40,7 +40,7 @@
 }
 
 #cotizador .cont_cot {
-  background: #06005a91;
+  background: #152a7c;
   padding: 20px;
   border-radius: 20px;
 }
@@ -53,8 +53,8 @@
 .buttons .next-btn,
 .buttons .prev-btn,
 .btn-lg {
-  background: #00ffdd;
-  color: rgb(0, 0, 0);
+  background: #b5179e;
+  color:  rgb(255, 255, 255);
   font-weight: bold;
   border: none;
   border-radius: 5px;
@@ -103,7 +103,7 @@
   }
   
   .step.active {
-    color: #00ffdd;
+    color: #b5179e;
   }
 
   
@@ -155,8 +155,8 @@
     width: 100%;
     padding: 10px;
     border-radius: 5px;
-    border: 2px solid #00ffdd;
-    background-color: blueviolet;
+    border: 2px solid #ffffff;
+    background-color: #7178df;
     color:#ffffff;
     font-size: 16px;
     margin-bottom: 20px;
@@ -181,7 +181,7 @@
   }
 
   #resultado strong {
-    color: #00ffdd;
+    color: #d315b6;
   }
 
   #resultado h1 {

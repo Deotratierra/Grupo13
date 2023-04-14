@@ -11,7 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     /* Agregamos un fondo gradiente utilizando los colores #b8307c y #4a3f6d */
-    background-image: linear-gradient(to bottom, #b8307c, #4a3f6d);
+    background-image: linear-gradient(to bottom, #173196, #7178df);
     /*Ocultamos cualquier desbordamiento del cuerpo para evitar scrollbars */
     overflow: hidden;
 }
@@ -41,8 +41,7 @@ body {
     /* Agregamos un radio de borde de 5 píxeles al contenedor para darle esquinas redondeadas */
     border-radius: 5px;
     /* Establecemos la fuente Yantramanav como fuente principal del contenedor */
-    font-family: "Yantramanav",
-        sans-serif;
+    font-family: "Yantramanav", sans-serif;
 }
 
 
@@ -68,7 +67,7 @@ body {
     /* Centramos el texto en el centro del elemento padre */
     text-align: center;
     /* Convertimos todo el texto en mayúsculas */
-    text-transform: uppercase;
+/*     text-transform: uppercase; PASE A TIPO ORACIÓN*/
     /* Establecemos el tamaño de fuente en 2.8rem */
     font-size: 2.8rem;
 }

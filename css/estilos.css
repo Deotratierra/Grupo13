@@ -139,19 +139,19 @@ header.sticky .menu-btn.active {
 
 
 header.sticky .navigation-items a {
-  color: #b5179e;
+  color: #6e44ff;
 }
 
 header.sticky .navigation-items i {
-  color: #b5179e;
+  color: #6e44ff;
 }
 
 header.sticky .navigation .navigation-items a:before {
-  background: #b5179e;
+  background: #6e44ff;
 }
 
 header.sticky .navigation .navigation-items i:before {
-  background: #b5179e;
+  background: #6e44ff;
 }
 
 /* modal */
@@ -297,7 +297,7 @@ header.sticky .navigation .navigation-items i:before {
 }
 
 .home .content a {
-  background: #b5179e;
+  background: #6e44ff;
   padding: 15px 35px;
   color: #fff;
   font-size: 1.1em;
@@ -407,7 +407,7 @@ header.sticky .navigation .navigation-items i:before {
 }
 
 .slider-navigation .nav-btn.active {
-  background: #b5179e;
+  background: #6e44ff;
 }
 
 .slider-navigation .nav-btn:not(:last-child) {
@@ -571,7 +571,7 @@ header.sticky .navigation .navigation-items i:before {
 /* Tarjetas */
 
 .tarjetas {
-  background-color:#15297c;
+  background-color:#ffffff;
   display: flex;
   flex-wrap: wrap;
   position: relative;
@@ -646,15 +646,15 @@ header.sticky .navigation .navigation-items i:before {
   line-height: 45px;
   color: #fff;
   /* background: rgba(0, 0, 0, 0.37); */
-  background: #b5179d44;
+  background: #6d44ff65;
   text-align: center;
 }
 
 .card .back {
   transform: perspective(600px) rotateY(180deg);
-  background: #7178df;
+  background: #fff;
   padding: 15px;
-  color: #f3f3f3;
+  color: #15297c;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -665,7 +665,7 @@ header.sticky .navigation .navigation-items i:before {
 .card .back h3 {
   padding-top: 0;
   margin-top: 0;
-  color: #b5179e;
+  color: #6e44ff;
 }
 
 .card .back p {
@@ -680,7 +680,7 @@ header.sticky .navigation .navigation-items i:before {
   padding: 5px 19px;
   border-radius: 7px;
   text-decoration: none;
-  background: #b5179e;
+  background: #6e44ff;
 
   color: #fff;
   font-weight: 600;
@@ -818,26 +818,27 @@ header.sticky .navigation .navigation-items i:before {
 /* nosotros empresa----------------------------------------------- */
 
 #nosotros {
-  background-color:#f7efef;
-   display: flex;
+  background-color:#fff;
+  padding-top: 20px;
+	   display: flex;
    flex-direction: column;
    height: 100%;
    width: 100%;
    justify-content: space-evenly;
    padding-top: 20px;
-   padding-bottom: 80px;
+   padding-bottom: 50px;
    
  }
  
  .nostitulo {
-   color: #15297c;
+   color: #272626;
    margin-top: 100px;
      margin-bottom: 50px;
    text-align: center;
  }
  
  .caja i {
-   color: #b5179e;
+   color: #6e44ff; 
    font-size: 19px;
  }
  
@@ -859,7 +860,12 @@ header.sticky .navigation .navigation-items i:before {
      font-size: 14px;
      box-shadow: 7px 7px 8px rgba(0, 0, 0, 0.3);/* sombra del recuadro*/
    
- }
+    }
+   
+ 
+ .caja i:hover {
+  transform: scale(1.7);/* efecto de transformación de escala */
+}
 
 .caja:hover{
   transform: scale(1.1);/* efecto de transformación de escala */
@@ -871,7 +877,7 @@ header.sticky .navigation .navigation-items i:before {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  height: 100%;
+  height: 120%;
   width: 100%;
   margin: auto;
   background-image: url("https://images.unsplash.com/photo-1486134030336-39b1094bf33e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1007&q=80");
@@ -888,11 +894,12 @@ header.sticky .navigation .navigation-items i:before {
   align-items: center;
   flex-direction: row;
   /* background: radial-gradient(circle, #000000bd, #b5179d8e); */
-  background:#b5179d5e;
-  width: 100%;
+  background:#152a7c98;
+  width: 120%;
   height: 100%;
   padding-top: 40px;
   padding-bottom: 40px;
+ 
 }
 
 .destinos {
@@ -907,15 +914,15 @@ header.sticky .navigation .navigation-items i:before {
 
 /* Equipo--------------------------------- */
 .cotenedor-mayor {
-  color: #f5f4f4;
+  color: #2e2c2c  ;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(to bottom, #b332c7, #7178df 30%); 
-  height: 500px;
+  background: linear-gradient(to bottom, #f7f8fa  , #7178df 40%); 
+  height: 600px;
   width: 100%;
   justify-content: center;
   align-items: center;
-
+  margin-top: 120px;
 }
 
 .contenedor-desarrollo {
@@ -970,7 +977,7 @@ header.sticky .navigation .navigation-items i:before {
   position: absolute;
   width: 350px;
   height: 150px;
-  background: linear-gradient(to right, #b5179e, #b5179e);
+  background: linear-gradient(to right, #6e44ff, #8013e6);
   transform: rotate(-35deg);
   top: -50px;
   left: -100px;
@@ -978,7 +985,7 @@ header.sticky .navigation .navigation-items i:before {
 
 .carde .contente h4 {
   font-size: 12px;
-  color: #1a1919;
+  color: #272626;
   margin-bottom: 5px;
 }
 
@@ -1065,7 +1072,7 @@ header.sticky .navigation .navigation-items i:before {
   margin-top: 50px;
   padding-left: 0px;
   align-content: center;
-  font-size: medium;
+  font-size: small;
 }
 
 .cont i {
@@ -1075,11 +1082,11 @@ header.sticky .navigation .navigation-items i:before {
 .redes {
   text-align: center;
   margin-top: 50px;
-  font-size: medium;
+  font-size:small ;
 }
 
 .redes i {
-  font-size: 250%;
+  font-size: 200%;
   margin: 20px 10px;
 }
 
@@ -1106,7 +1113,7 @@ transform: scale(1.2);
 }
 .boton-divisas{ /* botón---- */
   margin-top: 30PX;
-    background-color: #b5179e;
+    background-color: #6e44ff;
   border-radius: 10px;
   padding: 12px 20px;
     

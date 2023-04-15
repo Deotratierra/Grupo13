@@ -40,7 +40,7 @@
 }
 
 #cotizador .cont_cot {
-  background: #152a7c;
+  background: #152a7ce8;
   padding: 20px;
   border-radius: 20px;
 }
@@ -53,7 +53,7 @@
 .buttons .next-btn,
 .buttons .prev-btn,
 .btn-lg {
-  background: #b5179e;
+  background: #6e44ff;
   color:  rgb(255, 255, 255);
   font-weight: bold;
   border: none;
@@ -73,7 +73,7 @@
 }
 
 .buttons #download-pdf {
-  background: #ff0000;
+  background: rgb(151, 28, 28);
   color: rgb(255, 255, 255);
   font-weight: bold;
   border: none;
@@ -83,7 +83,7 @@
 
 .buttons #download-pdf:hover {
   background: #ffffff;
-  color: rgb(255, 0, 0);
+  color: rgb(151, 28, 28);
 }
 
 .steps {
@@ -103,7 +103,7 @@
   }
   
   .step.active {
-    color: #b5179e;
+    color: #6e44ff;
   }
 
   
@@ -156,8 +156,8 @@
     padding: 10px;
     border-radius: 5px;
     border: 2px solid #ffffff;
-    background-color: #7178df;
-    color:#ffffff;
+    background-color: #fff;
+    color:#7178df;
     font-size: 16px;
     margin-bottom: 20px;
   }
@@ -181,7 +181,7 @@
   }
 
   #resultado strong {
-    color: #d315b6;
+    color: #fff;
   }
 
   #resultado h1 {

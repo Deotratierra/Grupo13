@@ -1,5 +1,231 @@
+#nosotros {
+  background-color: #fff;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
 
-grupo13.rar
-vids/1.mp4
-vids/2.mp4
-vids/3.mp4
+.nostitulo {
+  color: #272626;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.caja i {
+  color: #6e44ff;
+  font-size: 19px;
+}
+
+.contenedor-caja {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* autoajustable */
+}
+
+.caja {
+  background-color: #7178df;
+  color: #fcf5eb;
+  width: 295px;
+  height: 350px;
+  text-align: center;
+  padding: 40px;
+  border-radius: 10px;
+  font-size: 14px;
+  box-shadow: 7px 7px 8px rgba(0, 0, 0, 0.3);
+  /* sombra del recuadro*/
+  transition: 0.1s ease-in-out;
+}
+
+.contenedor-caja .caj_medio {
+  margin: 0 30px;
+}
+
+.caja i:hover {
+  transform: scale(1.7);
+  /* efecto de transformación de escala */
+}
+
+.caja:hover {
+  transform: scale(1.1);
+  /* efecto de transformación de escala */
+}
+
+/* seccion  nosotros con imagen de fondo */
+
+.contenedor-rectangulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 120%;
+  width: 100%;
+  margin: auto;
+  background-image: url("https://images.unsplash.com/photo-1486134030336-39b1094bf33e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1007&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  /* desplazamiento de iagen de fondo */
+}
+
+.cont-dest {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  /* background: radial-gradient(circle, #000000bd, #b5179d8e); */
+  background: #152a7c98;
+  width: 120%;
+  height: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.destinos {
+  justify-content: space-between;
+  color: #fdfcff;
+  text-align: center;
+  margin: 30px;
+  width: 300px;
+  height: 100%;
+}
+
+/* Equipo--------------------------------- */
+.cotenedor-mayor {
+  color: #2e2c2c;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom, #f7f8fa, #7178df 40%);
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.contenedor-desarrollo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cotenedor-mayor .texto-desarollo h2 {
+  padding-bottom: 10px;
+}
+
+/*---- EQUIPO CARDS----*/
+
+.carde {
+  position: relative;
+  width: 200px;
+  height: 350px;
+  border-radius: 10px;
+  box-shadow: 2px 3px 5px rgba(73, 69, 52, 0.4);
+  margin: 15px 35px 15px 15px;
+}
+
+.carde .contente {
+  position: relative;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+}
+
+.carde .contente .img {
+  height: 50%;
+  margin-bottom: 20px;
+}
+
+.carde .contente .img img {
+  position: relative;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.carde .contente span {
+  position: absolute;
+  width: 350px;
+  height: 150px;
+  background: linear-gradient(to right, #6e44ff, #8013e6);
+  transform: rotate(-35deg);
+  top: -50px;
+  left: -100px;
+}
+
+.carde .contente h4 {
+  font-size: 12px;
+  color: #272626;
+  margin-bottom: 5px;
+}
+
+.carde .contente h6 {
+  font-size: 11px;
+  color: #5e2066;
+}
+
+.carde .contente p {
+  font-size: 9px;
+  color: #1a161f;
+}
+
+.carde .links {
+  position: absolute;
+  z-index: 90;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 2px 3px 5px rgba(73, 69, 52, 0.4);
+  padding: 20px;
+  align-items: center;
+  right: 10px;
+  top: 15px;
+  transition: 0.5s;
+}
+
+.carde:hover .links {
+  right: -50px;
+  border-radius: 0 10px 10px 0;
+}
+
+.carde .links a {
+  font-size: 20px;
+  color: #646069;
+}
+
+.carde .links a:nth-child(1):hover {
+  color: #0158ca;
+}
+
+.carde .links a:nth-child(2):hover {
+  color: darkmagenta;
+}
+
+.carde .links a:nth-child(3):hover {
+  color: #5d277d;
+}
+
+.carde .links a:nth-child(4):hover {
+  color: #fe0000;
+}

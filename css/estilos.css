@@ -438,7 +438,6 @@ header.sticky .navigation .navigation-items i:before {
 }
 
 /* Responsive de Header */
-
 @media (max-width: 1000px) {
   header {
     padding: 12px 20px;
@@ -447,6 +446,8 @@ header.sticky .navigation .navigation-items i:before {
   .home {
     position: relative;
     padding: 100px 20px;
+    box-sizing: border-box;
+    /* Se agrega box-sizing para que el padding no afecte al tamaño total del elemento */
   }
 
   .home .media-icons {
@@ -457,7 +458,7 @@ header.sticky .navigation .navigation-items i:before {
     display: block;
   }
 
-  /* Menu venana */
+  /* Menu ventana */
 
   header .navigation {
     display: none;
@@ -499,8 +500,8 @@ header.sticky .navigation .navigation-items i:before {
 
   header .navigation.active .navigation-items {
     background: #fff;
-    width: 600px;
     max-width: 600px;
+    /* Se quita el ancho fijo y se utiliza max-width para adaptarse al ancho del contenido */
     margin: 20px;
     padding: 40px;
     display: flex;
@@ -694,7 +695,7 @@ header.sticky .navigation .navigation-items i:before {
 /* Responsive de tarjetas */
 
 @media (max-width: 1000px) {
-  .card {
+  .card .carde {
     width: 250px;
     height: 300px;
   }
@@ -714,7 +715,7 @@ header.sticky .navigation .navigation-items i:before {
 }
 
 @media (max-width: 840px) {
-  .card {
+  .card .carde {
     width: 200px;
     height: 250px;
   }
@@ -734,7 +735,7 @@ header.sticky .navigation .navigation-items i:before {
 }
 
 @media (max-width: 690px) {
-  .card {
+  .card .carde {
     width: 250px;
     height: 300px;
   }
@@ -754,7 +755,7 @@ header.sticky .navigation .navigation-items i:before {
 }
 
 @media (max-width: 560px) {
-  .card {
+  .card .carde {
     width: 200px;
     height: 250px;
   }
@@ -774,7 +775,7 @@ header.sticky .navigation .navigation-items i:before {
 }
 
 @media (max-width: 460px) {
-  .card {
+  .card .carde {
     width: 300px;
     height: 350px;
   }
@@ -837,7 +838,8 @@ header.sticky .navigation .navigation-items i:before {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly; /* autoajustable */
+  justify-content: space-evenly;
+  /* autoajustable */
 }
 
 .caja {
@@ -849,7 +851,8 @@ header.sticky .navigation .navigation-items i:before {
   padding: 40px;
   border-radius: 10px;
   font-size: 14px;
-  box-shadow: 7px 7px 8px rgba(0, 0, 0, 0.3); /* sombra del recuadro*/
+  box-shadow: 7px 7px 8px rgba(0, 0, 0, 0.3);
+  /* sombra del recuadro*/
   transition: 0.1s ease-in-out;
 }
 
@@ -858,20 +861,25 @@ header.sticky .navigation .navigation-items i:before {
 }
 
 .caja i:hover {
-  transform: scale(1.7); /* efecto de transformación de escala */
+  transform: scale(1.7);
+  /* efecto de transformación de escala */
 }
 
 .caja:hover {
-  transform: scale(1.1); /* efecto de transformación de escala */
+  transform: scale(1.1);
+  /* efecto de transformación de escala */
 }
-/* seccion  nosotros con imagen de fondo */
 
+/* seccion  nosotros con imagen de fondo */
+.container{
+    overflow: hidden;
+}
 .contenedor-rectangulo {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
-  height: 120%;
+  flex-direction: unset;
+  height: 100%;
   width: 100%;
   margin: auto;
   background-image: url("https://images.unsplash.com/photo-1486134030336-39b1094bf33e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1007&q=80");
@@ -879,7 +887,7 @@ header.sticky .navigation .navigation-items i:before {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  /* desplazamiento de iagen de fondo */
+
 }
 
 .cont-dest {
@@ -887,24 +895,28 @@ header.sticky .navigation .navigation-items i:before {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  /* background: radial-gradient(circle, #000000bd, #b5179d8e); */
   background: #152a7c98;
-  width: 120%;
-  height: 100%;
+  width: 100%;
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
 .destinos {
+  flex: 1;
   justify-content: space-between;
   color: #fdfcff;
   text-align: center;
   margin: 30px;
-  width: 300px;
-  height: 100%;
+  max-width: 300px;
+
+}
+
+.destinos h2 {
+  font-size: 35px;
 }
 
 /* Equipo--------------------------------- */
+/* Estilos para el contenedor mayor */
 .cotenedor-mayor {
   color: #2e2c2c;
   display: flex;
@@ -916,15 +928,15 @@ header.sticky .navigation .navigation-items i:before {
   padding-bottom: 30px;
 }
 
-.contenedor-desarrollo {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+.texto-desarollo {
+  text-align: center;
 }
 
-.cotenedor-mayor .texto-desarollo h2 {
-  padding-bottom: 10px;
+.contenedor-desarrollo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 /*---- EQUIPO CARDS----*/
@@ -932,7 +944,7 @@ header.sticky .navigation .navigation-items i:before {
 .carde {
   position: relative;
   width: 200px;
-  height: 350px;
+  height: 300px;
   border-radius: 10px;
   box-shadow: 2px 3px 5px rgba(73, 69, 52, 0.4);
   margin: 15px 35px 15px 15px;
@@ -1054,6 +1066,7 @@ header.sticky .navigation .navigation-items i:before {
   width: 250px;
   font-size: 15px;
   text-align: center;
+
   margin-right: 150px;
   margin-top: 10px;
 }
@@ -1064,6 +1077,11 @@ header.sticky .navigation .navigation-items i:before {
   padding-left: 0px;
   align-content: center;
   font-size: small;
+
+}
+
+.cont address {
+  white-space: nowrap;
 }
 
 .cont i {
@@ -1074,6 +1092,7 @@ header.sticky .navigation .navigation-items i:before {
   text-align: center;
   margin-top: 50px;
   font-size: small;
+
 }
 
 .redes i {
@@ -1087,11 +1106,15 @@ header.sticky .navigation .navigation-items i:before {
   margin-top: 50px;
   margin-left: 0px;
   color: #fcf5eb;
+  text-align: center;
+  /* Agrega esta propiedad para centrar horizontalmente */
 }
 
 .newsletter .btn {
   max-width: 150px;
   font-size: 11px;
+  margin: 0 auto;
+  /* Agrega esta propiedad para centrar horizontalmente */
 }
 
 .newsletter img {
@@ -1100,16 +1123,20 @@ header.sticky .navigation .navigation-items i:before {
   max-width: 20px;
   filter: invert();
 }
+
 .newsletter img:hover {
   /* efecto aumento imagen---- */
   transform: scale(1);
 }
+
 .newsletter .input-group {
   display: flex;
 }
+
 .boton-divisas {
   /* botón---- */
-  float: right;
+  float: none;
+  /* Cambia el valor a 'none' para centrar horizontalmente */
   margin-top: 30px;
   background-color: #6e44ff;
   border-radius: 10px;
@@ -1267,6 +1294,4 @@ body.modo-oscuro header {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   /* Agrega una sombra alrededor del popup */
   display: none;
-  /* Oculta el popup inicialmente */
-  /* Agrega otras propiedades de estilo según tus necesidades */
 }

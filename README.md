@@ -1,12 +1,12 @@
-# **Landing Page de Agencia de Viajes - Argentina Programa
+# Landing Page de Agencia de Viajes - Argentina Programa
 
 ![Landing Page Argentina Programa](https://ruta-de-imagenes.com/imagen-principal.jpg)
 
-## **Descripción del Proyecto
+## Descripción del Proyecto
 
 ¡Bienvenidos al proyecto de la landing page de la agencia de viajes Argentina Programa! Este proyecto fue realizado como parte de un curso gratuito de introducción al desarrollo web, en el cual participamos un equipo de 5 personas apasionadas por el diseño y la programación web.
 
-## **Funcionalidades
+## Funcionalidades
 
 La landing page cuenta con varias funcionalidades que hacen que la experiencia del usuario sea interactiva y amigable:
 

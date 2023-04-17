@@ -807,7 +807,7 @@ header.sticky .navigation .navigation-items i:before {
 }
 
 /* nosotros empresa----------------------------------------------- */
-
+/* Estilos para el contenedor mayor */
 #nosotros {
   background-color: #fff;
   padding-top: 20px;
@@ -820,7 +820,7 @@ header.sticky .navigation .navigation-items i:before {
   padding-top: 20px;
   padding-bottom: 50px;
 }
-
+/* Estilos para el título */
 .nostitulo {
   color: #272626;
   margin-top: 10px;
@@ -838,11 +838,13 @@ header.sticky .navigation .navigation-items i:before {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+   /* autoajustable */
   justify-content: space-evenly;
-  /* autoajustable */
+ 
 }
 
 .caja {
+   /* contenedor de la información */
   background-color: #7178df;
   color: #fcf5eb;
   width: 295px;
@@ -851,8 +853,9 @@ header.sticky .navigation .navigation-items i:before {
   padding: 40px;
   border-radius: 10px;
   font-size: 14px;
+    /* sombra del recuadro*/
   box-shadow: 7px 7px 8px rgba(0, 0, 0, 0.3);
-  /* sombra del recuadro*/
+/* efecto de transformación de escala */
   transition: 0.1s ease-in-out;
 }
 
@@ -861,19 +864,20 @@ header.sticky .navigation .navigation-items i:before {
 }
 
 .caja i:hover {
+    /* efecto de transformación de escala */
   transform: scale(1.7);
-  /* efecto de transformación de escala */
+
 }
 
 .caja:hover {
+   /* efecto de transformación de escala */
   transform: scale(1.1);
-  /* efecto de transformación de escala */
+ 
 }
 
 /* seccion  nosotros con imagen de fondo */
-.container{
-    overflow: hidden;
-}
+
+/* Estilos para el contenedor mayor */
 .contenedor-rectangulo {
   display: flex;
   justify-content: center;
@@ -900,7 +904,9 @@ header.sticky .navigation .navigation-items i:before {
   padding-top: 40px;
   padding-bottom: 40px;
 }
-
+.container{
+  overflow: hidden; /* controla el contenido que sobresale de los límites de un contenedor */
+}
 .destinos {
   flex: 1;
   justify-content: space-between;
@@ -1061,7 +1067,7 @@ header.sticky .navigation .navigation-items i:before {
 .mifooter {
   max-width: 1150px;
 }
-
+/*logo- seguinos---- contacto----- */
 .mifooter .logof p {
   width: 250px;
   font-size: 15px;
@@ -1071,7 +1077,7 @@ header.sticky .navigation .navigation-items i:before {
   margin-top: 10px;
 }
 
-/*logo- seguinos---- contacto---------------------------- */
+
 .cont {
   margin-top: 50px;
   padding-left: 0px;
@@ -1232,10 +1238,6 @@ body.modo-oscuro header {
 }
 
 .modo-oscuro .card .back h3 {
-  color: #ffffff;
-}
-
-.modo-oscuro .card .back p {
   color: #ffffff;
 }
 

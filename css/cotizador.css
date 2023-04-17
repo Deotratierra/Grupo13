@@ -1,5 +1,5 @@
 #cotizador {
-  /* background-image: url('https://images.pexels.com/photos/8532285/pexels-photo-8532285.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
+  background-image: url('/imgs/1.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,7 +16,7 @@
   margin-right: auto;
 }
 
-#cotizador .v_cot_2 {
+/*#cotizador .v_cot_2 {
   display: none;
 }
 
@@ -29,7 +29,7 @@
   object-fit: cover;
   z-index: -1;
 }
-
+*/
 #cotizador h2 {
   padding-bottom: 20px;
   color: #ffffff;
@@ -54,7 +54,7 @@
 .buttons .prev-btn,
 .btn-lg {
   background: #6e44ff;
-  color:  rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
   font-weight: bold;
   border: none;
   border-radius: 5px;
@@ -87,130 +87,130 @@
 }
 
 .steps {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-  
-  .step {
-    width: 30%;
-    text-align: center;
-    font-size: 12px;
-    font-weight: bold;
-    color: #ffffff;
-  }
-  
-  .step.active {
-    color: #6e44ff;
-  }
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 
-  
-  /* Estilos para el formulario */
-  form {
-    max-width: 500px;
-    margin: 0 auto;
-  }
-  
-  .paso:not(:first-child) {
-    display: none;
-  }
-  
-  label {
-    width: 100%;
-    padding-left: 5px;
-    text-align: start;
-    display: block;
-    margin-bottom: 5px;
-    font-size: 16px;
-    font-weight: bold;
-  }
+.step {
+  width: 30%;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+}
 
-  #cantP,
-  #desde,
-  #hasta {
-    text-align: center;
-  }
+.step.active {
+  color: #6e44ff;
+}
 
-  #fechaDesde,
-  #fechaHasta {
-    margin-bottom: 10px;
-  }
 
-  #personas {
-    width: 50px;
-    height: 40px;
-    margin-bottom: 10px;
-    font-size: 25px;
-    font-weight: bold;
-    padding-left: 3px;
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  input[type="tel"],
-  #message,
-  select {
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 2px solid #ffffff;
-    background-color: #fff;
-    color:#7178df;
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
-  
-  input[type="submit"] {
-    background-color: #0066cc;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  button.anterior {
-    display: none;
-  }
+/* Estilos para el formulario */
+form {
+  max-width: 500px;
+  margin: 0 auto;
+}
 
-  #resultado {
-    color: #ffffff;
-  }
+.paso:not(:first-child) {
+  display: none;
+}
 
-  #resultado strong {
-    color: #fff;
-  }
+label {
+  width: 100%;
+  padding-left: 5px;
+  text-align: start;
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
 
-  #resultado h1 {
-    display: none;
-  }
+#cantP,
+#desde,
+#hasta {
+  text-align: center;
+}
 
-  /* Modo Oscuro del COtizador */
+#fechaDesde,
+#fechaHasta {
+  margin-bottom: 10px;
+}
 
-  .modo-oscuro #cotizador .v_cot_1 {
-    display: none;
-  }
+#personas {
+  width: 50px;
+  height: 40px;
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  padding-left: 3px;
+}
 
-  .modo-oscuro #cotizador .v_cot_2 {
-    display: block;
-  }
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+#message,
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #ffffff;
+  background-color: #fff;
+  color: #7178df;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
 
-  .modo-oscuro #cotizador .cont_cot {
-    background: #00000091;
-  }
+input[type="submit"] {
+  background-color: #0066cc;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
 
- .modo-oscuro input[type="text"],
- .modo-oscuro input[type="email"],
- .modo-oscuro input[type="tel"],
- .modo-oscuro #message,
- .modo-oscuro select {
+button.anterior {
+  display: none;
+}
+
+#resultado {
+  color: #ffffff;
+}
+
+#resultado strong {
+  color: #fff;
+}
+
+#resultado h1 {
+  display: none;
+}
+
+/* Modo Oscuro del COtizador */
+
+.modo-oscuro #cotizador .v_cot_1 {
+  display: none;
+}
+
+.modo-oscuro #cotizador .v_cot_2 {
+  display: block;
+}
+
+.modo-oscuro #cotizador .cont_cot {
+  background: #00000091;
+}
+
+.modo-oscuro input[type="text"],
+.modo-oscuro input[type="email"],
+.modo-oscuro input[type="tel"],
+.modo-oscuro #message,
+.modo-oscuro select {
   border: 2px solid #ff00ea;
   background-color: rgb(28, 0, 131);
-  color:#ffffff;
- }
+  color: #ffffff;
+}
 
 .modo-oscuro .buttons .next-btn,
 .modo-oscuro .buttons .prev-btn,

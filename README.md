@@ -49,5 +49,5 @@ En conjunto, esta selección de colores crea una paleta visualmente atractiva y 
 - [ ]3. Abre tu terminal o línea de comandos en tu máquina local.
 - [ ]4. Navega a la ubicación donde deseas clonar el repositorio.
 - [ ]5. Ejecuta el siguiente comando para clonar el repositorio:
-- ``` git clone [[URL del repositorio](https://github.com/Deotratierra/grupo13)]``` 
+- ``` git clone (https://github.com/Deotratierra/grupo13)``` 
 

@@ -1208,6 +1208,10 @@ body.modo-oscuro header {
   color: #ffffff;
 }
 
+.modo-oscuro .card .back p {
+  color: #ffffff;
+}
+
 .modo-oscuro .card .back a {
   background-color: #000000;
   color: #ffffff;

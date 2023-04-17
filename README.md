@@ -41,13 +41,24 @@ En conjunto, esta selección de colores crea una paleta visualmente atractiva y 
 
 
  # Cómo Ejecutar el Proyecto
-**¡Hola! ¿Como estas? ¡Es genial que estés interesad@ en ejecutar nuestro proyecto! Te muestro los pasos a seguir:
+¡Hola! ¿Como estas? ¡Es genial que estés interesad@ en ejecutar nuestro proyecto! Te muestro los pasos a seguir:
 
-- **Clonar el Repositorio: Lo primero que necesitas hacer es clonar el repositorio del proyecto desde GitHub. No te preocupes, es fácil. Aquí te explico cómo hacerlo:
-- [ ] 1. Abre el repositorio del proyecto en GitHub.
-- [ ]2. Haz clic en el botón "Code" y copia la URL del repositorio.
-- [ ]3. Abre tu terminal o línea de comandos en tu máquina local.
-- [ ]4. Navega a la ubicación donde deseas clonar el repositorio.
-- [ ]5. Ejecuta el siguiente comando para clonar el repositorio:
-- ``` git clone (https://github.com/Deotratierra/grupo13)``` 
+Clonar el Repositorio: Lo primero que necesitas hacer es clonar el repositorio del proyecto desde GitHub. No te preocupes, es fácil. Aquí te explico cómo hacerlo:
+- [x] Abre el repositorio del proyecto en GitHub.
+- [x] Haz clic en el botón "Code" y copia la URL del repositorio.
+- [x] Abre tu terminal o línea de comandos en tu máquina local.
+- [x] Navega a la ubicación donde deseas clonar el repositorio.
+- [x] Ejecuta el siguiente comando para clonar el repositorio:
+- ``` git clone [[URL del repositorio](https://github.com/Deotratierra/grupo13)]``` 
+
+
+¡Te deseamos mucha suerte en tus futuros proyectos! Si necesitas más información o tienes alguna pregunta, no dudes en ponerte en contacto con nosotros. ¡Gracias nuevamente por tu apoyo y confianza en nuestro proyecto!
+
+## Equipo de Desarrollo
+
+- Martin: [GitHub](https://github.com/martinjosmac)
+- Ezequiel: [GitHub](https://github.com/prestymdq)
+- Juan Pablo: [GitHub](https://github.com/jpricart)
+- Gabriela: [GitHub](https://github.com/Gabrielacecily)
+- Exequiel: [GitHub](https://github.com/Deotratierra)
 

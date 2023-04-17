@@ -37,3 +37,17 @@ La landing page cuenta con varias funcionalidades que hacen que la experiencia d
 - **Color de Fondo:** `#15297c`: Este color se utiliza como el color de fondo de la página, brindando un tono oscuro y profundo que crea un ambiente atractivo y elegante. Se puede utilizar para resaltar el contenido y hacer que los elementos se destaquen en contraste con el fondo.
 
 En conjunto, esta selección de colores crea una paleta visualmente atractiva y armoniosa para la landing page de Argentina Programa, que puede ayudar a capturar la atención del usuario y transmitir una sensación de profesionalismo y calidad en la presentación de los paquetes turísticos ofrecidos por la agencia de viajes.
+
+
+
+ # Cómo Ejecutar el Proyecto
+**¡Hola! ¿Como estas? ¡Es genial que estés interesad@ en ejecutar nuestro proyecto! Te muestro los pasos a seguir:
+
+- **Clonar el Repositorio: Lo primero que necesitas hacer es clonar el repositorio del proyecto desde GitHub. No te preocupes, es fácil. Aquí te explico cómo hacerlo:
+- [ ] 1. Abre el repositorio del proyecto en GitHub.
+- [ ]2. Haz clic en el botón "Code" y copia la URL del repositorio.
+- [ ]3. Abre tu terminal o línea de comandos en tu máquina local.
+- [ ]4. Navega a la ubicación donde deseas clonar el repositorio.
+- [ ]5. Ejecuta el siguiente comando para clonar el repositorio:
+- ``` git clone [[URL del repositorio](https://github.com/Deotratierra/grupo13)]``` 
+

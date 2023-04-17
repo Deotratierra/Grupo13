@@ -49,7 +49,7 @@ Clonar el Repositorio: Lo primero que necesitas hacer es clonar el repositorio d
 - [x] Abre tu terminal o línea de comandos en tu máquina local.
 - [x] Navega a la ubicación donde deseas clonar el repositorio.
 - [x] Ejecuta el siguiente comando para clonar el repositorio:
-- ``` git clone [[URL del repositorio](https://github.com/Deotratierra/grupo13)]``` 
+- ``` git clone https://github.com/Deotratierra/grupo13``` 
 
 
 ¡Te deseamos mucha suerte en tus futuros proyectos! Si necesitas más información o tienes alguna pregunta, no dudes en ponerte en contacto con nosotros. ¡Gracias nuevamente por tu apoyo y confianza en nuestro proyecto!

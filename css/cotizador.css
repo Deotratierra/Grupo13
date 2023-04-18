@@ -45,6 +45,7 @@
   border-radius: 20px;
 }
 
+
 .buttons {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -198,8 +199,28 @@ button.anterior {
   display: block;
 }
 
+.modo-oscuro #cotizador {
+  background-image: url('../imgs/glob_aer.jpg');
+}
+
 .modo-oscuro #cotizador .cont_cot {
-  background: #00000091;
+  /*background: #001764ab;*/
+  background-image: linear-gradient(to right, rgba(163, 0, 54, 0.171), rgba(129, 0, 108, 0.178), rgba(27, 0, 145, 0.178), rgba(0, 65, 119, 0.164));
+  background-size: 1400% 100%;
+  animation: gradient 5s ease infinite;
+  transition: 0.3s ease-in-out;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0%; /* Posición inicial del fondo */
+  }
+  50% {
+    background-position: 100%; /* Posición final del fondo */
+  }
+  100% {
+    background-position: 0%; /* Posición final del fondo */
+  }
 }
 
 .modo-oscuro input[type="text"],
@@ -207,7 +228,7 @@ button.anterior {
 .modo-oscuro input[type="tel"],
 .modo-oscuro #message,
 .modo-oscuro select {
-  border: 2px solid #ff00ea;
+  border: 2px solid #ff00ea#ff00ea;
   background-color: rgb(28, 0, 131);
   color: #ffffff;
 }
@@ -215,10 +236,26 @@ button.anterior {
 .modo-oscuro .buttons .next-btn,
 .modo-oscuro .buttons .prev-btn,
 .modo-oscuro .btn-lg {
-  background: #4b006e;
+  background: #ff00ea;
   color: rgb(255, 255, 255);
 }
 
-.modo-oscuro .step.active {
+.modo-oscuro .buttons .next-btn:hover,
+.modo-oscuro .buttons .prev-btn:hover {
+  background: #ffffff;
   color: #ff00ea;
+}
+
+.modo-oscuro .buttons #download-pdf {
+  background: #ff0000;
+  color: rgb(255, 255, 255);
+}
+
+.buttons #download-pdf:hover {
+  background: #ffffff;
+  color: rgb(255, 0, 0);
+}
+
+.modo-oscuro .step.active {
+  color: #ff2cff;
 }

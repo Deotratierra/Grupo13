@@ -645,7 +645,7 @@ header.sticky .navigation .navigation-items i:before {
 
 .card .back {
   transform: perspective(600px) rotateY(180deg);
-  background: #fff;
+  background: #ffffff;
   padding: 15px;
   color: #15297c;
   display: flex;
@@ -1276,13 +1276,15 @@ body.modo-oscuro header {
 }
 
 .modo-oscuro .contenedor-rectangulo {
-  background-image: url("https://images.unsplash.com/photo-1506404523803-9f9fa45e066e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+  background-image: url('../imgs/girls_night.jpg');
 }
 
 .modo-oscuro .cont-dest {
   background-color: #0500492f;
   background-size: contain;
 }
+
+
 
 .popup-container {
   width: 500px;

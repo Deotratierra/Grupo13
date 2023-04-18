@@ -645,7 +645,7 @@ header.sticky .navigation .navigation-items i:before {
 
 .card .back {
   transform: perspective(600px) rotateY(180deg);
-  background: #fff;
+  background: #cfe0fac2;
   padding: 15px;
   color: #15297c;
   display: flex;
@@ -807,6 +807,7 @@ header.sticky .navigation .navigation-items i:before {
 }
 
 /* nosotros empresa----------------------------------------------- */
+
 /* Estilos para el contenedor mayor */
 #nosotros {
   background-color: #fff;
@@ -899,7 +900,7 @@ header.sticky .navigation .navigation-items i:before {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  background: #152a7c98;
+  background: #152a7c86;
   width: 100%;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -921,7 +922,8 @@ header.sticky .navigation .navigation-items i:before {
   font-size: 35px;
 }
 
-/* Equipo--------------------------------- */
+/* EQUIPO-------------------------------- */
+
 /* Estilos para el contenedor mayor */
 .cotenedor-mayor {
   color: #2e2c2c;

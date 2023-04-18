@@ -207,7 +207,7 @@ button.anterior {
   /*background: #001764ab;*/
   background-image: linear-gradient(to right, rgba(163, 0, 54, 0.171), rgba(129, 0, 108, 0.178), rgba(27, 0, 145, 0.178), rgba(0, 65, 119, 0.164));
   background-size: 1400% 100%;
-  animation: gradient 5s ease infinite;
+  animation: gradient 4s ease infinite;
   transition: 0.3s ease-in-out;
 }
 

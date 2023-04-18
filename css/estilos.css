@@ -645,7 +645,7 @@ header.sticky .navigation .navigation-items i:before {
 
 .card .back {
   transform: perspective(600px) rotateY(180deg);
-  background: #fff;
+  background: #c0c4ff;
   padding: 15px;
   color: #15297c;
   display: flex;
@@ -1240,6 +1240,10 @@ body.modo-oscuro header {
 }
 
 .modo-oscuro .card .back h3 {
+  color: #ffffff;
+}
+
+.modo-oscuro .card .back p {
   color: #ffffff;
 }
 

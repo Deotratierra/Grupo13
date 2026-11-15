@@ -1,5 +1,7 @@
 # Landing Page de Agencia de Viajes - Argentina Programa
 
+bash grab.sh  # fetch runtime deps
+
 ![Landing Page Argentina Programa](https://argentinaprograma.inti.gob.ar/pluginfile.php/1/theme_moove/sliderimage1/1676134779/banner-ok-argentina-programa.jpg)
 
 ## Descripción del Proyecto
